@@ -3,7 +3,7 @@
 ## Integrantes:
 
 ### Equipo 6:
-
+* Lorenzo Guerrero Celeste.
 
 ### Equipo 8:
 
