@@ -4,6 +4,7 @@
 
 ### Equipo 6:
 * Lorenzo Guerrero Celeste.
+* Garcia Toxqui Demian Oswaldo
 
 ### Equipo 8:
 
