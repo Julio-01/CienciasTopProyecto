@@ -7,6 +7,7 @@
 * García Landa Brenda Yareli 
 * Garcia Toxqui Demian Oswaldo
 * Manjarrez Angeles Valeria Fernanda.
+*González Morales Blanca Angélica
 
 ### Equipo 8:
 
