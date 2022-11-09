@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
 })
-export class FormComponent implements OnInit {
+export class ProductosFormComponent implements OnInit {
 
   titulo: string = "Añadir Producto"
   producto: Producto = new Producto()

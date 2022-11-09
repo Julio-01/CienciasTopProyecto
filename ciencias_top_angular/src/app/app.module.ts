@@ -9,16 +9,20 @@ import { ProductosComponent } from './productos/productos.component';
 import { RouterModule, Routes } from '@angular/router';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { HttpClientModule} from '@angular/common/http';
-import { FormComponent } from './productos/form.component';
+import { ProductosFormComponent } from './productos/form.component';
+import { UsuariosFormComponent } from './usuarios/form.component';
 import { FormsModule } from '@angular/forms';
 
 
 const routes: Routes = [
   {path: '', redirectTo: '/productos', pathMatch: 'full'},
-  {path: 'usuarios', component: UsuariosComponent },
   {path: 'productos', component: ProductosComponent},
-  {path: 'productos/form', component: FormComponent},
-  {path: 'productos/form/:id', component: FormComponent},
+  {path: 'productos/form', component: ProductosFormComponent},
+  {path: 'productos/form/:id', component: ProductosFormComponent},
+
+  {path: 'usuarios', component: UsuariosComponent},
+  {path: 'usuarios/form', component: UsuariosFormComponent},
+  {path: 'usuarios/form/:id', component: UsuariosFormComponent}
 ];
 
 
@@ -29,7 +33,8 @@ const routes: Routes = [
     FooterComponent,
     ProductosComponent,
     UsuariosComponent,
-    FormComponent,
+    ProductosFormComponent,
+    UsuariosFormComponent
   ],
   imports: [
     BrowserModule,
