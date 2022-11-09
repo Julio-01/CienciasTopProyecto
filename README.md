@@ -10,3 +10,4 @@
 ### Equipo 8:
 
 * Torres Escobedo Julio Cesar
+* García Albarrán Luis Antonio
