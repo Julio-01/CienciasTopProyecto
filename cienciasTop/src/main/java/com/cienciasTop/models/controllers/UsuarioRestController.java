@@ -42,8 +42,8 @@ public class UsuarioRestController {
 	public Usuario update(@RequestBody Usuario usuario, @PathVariable long id) {
 		Usuario currentUsuario = this.usuarioService.findById(id);
 		currentUsuario.setNombre(usuario.getNombre());
-		currentUsuario.setNumeroCuenta(usuario.getNumeroCuenta());
-		currentUsuario.setNumeroCelular(usuario.getNumeroCelular());
+		currentUsuario.setNumeroDeCuenta(usuario.getNumeroDeCuenta());
+		currentUsuario.setNumeroDeCelular(usuario.getNumeroDeCelular());
 		currentUsuario.setCorreoElectronico(usuario.getCorreoElectronico());
 		currentUsuario.setCarrera(usuario.getCarrera());
 		currentUsuario.setPumaPuntos(usuario.getPumaPuntos());

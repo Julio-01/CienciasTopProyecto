@@ -18,10 +18,10 @@ public class Usuario implements Serializable{
 	private long id;
 	@Column(name = "nombre")
 	private String nombre;
-	@Column(name = "numeroCuenta")
-	private String numeroCuenta;
-	@Column(name = "numeroCelular")
-	private String numeroCelular;
+	@Column(name = "numeroDeCuenta")
+	private String numeroDeCuenta;
+	@Column(name = "numeroDeCelular")
+	private String numeroDeCelular;
 	@Column(name = "correoElectronico")
 	private String correoElectronico;
 	@Column(name = "carrera")
@@ -45,20 +45,20 @@ public class Usuario implements Serializable{
 		this.nombre = nombre;
 	}
 
-	public String getNumeroCuenta() {
-		return numeroCuenta;
+	public String getNumeroDeCuenta() {
+		return numeroDeCuenta;
 	}
 
-	public void setNumeroCuenta(String numeroCuenta) {
-		this.numeroCuenta = numeroCuenta;
+	public void setNumeroDeCuenta(String numeroDeCuenta) {
+		this.numeroDeCuenta = numeroDeCuenta;
 	}
 
-	public String getNumeroCelular() {
-		return numeroCelular;
+	public String getNumeroDeCelular() {
+		return numeroDeCelular;
 	}
 
-	public void setNumeroCelular(String numeroCelular) {
-		this.numeroCelular = numeroCelular;
+	public void setNumeroDeCelular(String numeroDeCelular) {
+		this.numeroDeCelular = numeroDeCelular;
 	}
 
 	public String getCorreoElectronico() {
