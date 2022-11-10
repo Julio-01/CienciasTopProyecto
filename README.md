@@ -14,3 +14,4 @@
 
 * Torres Escobedo Julio Cesar
 * García Albarrán Luis Antonio
+* Memik Hernández Toprak
