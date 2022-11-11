@@ -45,6 +45,7 @@ public class ProductoRestController {
 		currentProducto.setStock(producto.getStock());
 		currentProducto.setPrecio(producto.getPrecio());
 		currentProducto.setDescripcion(producto.getDescripcion());
+		currentProducto.setTiempo(producto.getTiempo());
 		this.productoService.save(currentProducto);
 		return currentProducto;
 	}
