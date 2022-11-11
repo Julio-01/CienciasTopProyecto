@@ -2,5 +2,5 @@ import { Usuario } from './usuario';
 
 
 export const USUARIOS: Usuario[] = [
-    {id: 1, nombre: 'Monopoli', numeroCuenta: '123456789', numeroCelular: '5544332211', correoElectronico: 'correo', carrera: 'carrerin', pumaPuntos: 100},
+    {id: 1, nombre: 'Monopoli', numeroDeCuenta: '123456789', numeroDeCelular: '5544332211', correoElectronico: 'correo', carrera: 'carrerin', rol:'Actuaria', contrasena:'contrasena', pumaPuntos: 100},
 ]

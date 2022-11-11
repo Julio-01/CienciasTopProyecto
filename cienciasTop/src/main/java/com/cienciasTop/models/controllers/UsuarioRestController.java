@@ -47,6 +47,8 @@ public class UsuarioRestController {
 		currentUsuario.setCorreoElectronico(usuario.getCorreoElectronico());
 		currentUsuario.setCarrera(usuario.getCarrera());
 		currentUsuario.setPumaPuntos(usuario.getPumaPuntos());
+		currentUsuario.setRol(usuario.getRol());
+		currentUsuario.setContrasena(usuario.getContrasena());
 		
 		this.usuarioService.save(currentUsuario);
 		return currentUsuario;

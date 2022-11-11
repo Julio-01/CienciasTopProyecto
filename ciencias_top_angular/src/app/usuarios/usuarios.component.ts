@@ -31,7 +31,7 @@ export class UsuariosComponent implements OnInit {
     
     swalWithBootstrapButtons.fire({
       title: 'Estas seguro?',
-      text: `¿Seguro que desea eliminar el usuario ${usuario.nombre}?`,
+      text: `¿Seguro que desea eliminar el usuario ${usuario.numeroDeCuenta}?`,
       icon: 'warning',
       showCancelButton: true,
       confirmButtonText: 'si, Eliminar!',

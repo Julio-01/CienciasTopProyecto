@@ -4,13 +4,17 @@ export class Usuario {
 
     nombre: string;
 
-    numeroCuenta: string;
+    numeroDeCuenta: string;
 
-    numeroCelular: string;
+    numeroDeCelular: string;
     
     correoElectronico: string;
 
     carrera: string;
     
     pumaPuntos: number;
+
+    rol: string;
+
+    contrasena: string;
 }

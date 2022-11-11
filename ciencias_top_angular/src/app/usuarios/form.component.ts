@@ -43,7 +43,7 @@ export class UsuariosFormComponent implements OnInit {
     this.usuarioService.update(this.usuario).subscribe(usuario => 
       {
       this.router.navigate(['/usuarios'])
-      swal.fire('Usuario Actualizado', `${usuario.nombre} actualizado con éxito`, 'success')
+      swal.fire('Usuario Actualizado', `El Usuario con el numero de cuenta ${usuario.numeroDeCuenta} fue actualizado con éxito`, 'success')
       }
     )
   }
