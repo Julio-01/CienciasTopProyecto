@@ -1,0 +1,60 @@
+<section style="background-color: #eee"></section>
+
+<div class="card bg-dark text-white container my-2">
+    <div class="card-header my-2">Ver Producto</div>
+    <div class="row g-0">
+        <div class="col-md-4">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/7.webp" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+  
+              <form>
+                  <div class="form-group row">
+                      <label for="" class="col-form-label col-sm-2">Nombre:</label>
+                      <div class="col-sm-6">
+                          <p class="lead mb-0">{{ producto.nombre }}</p>
+                      </div>
+                  </div>
+      
+                  <div class="form-group row">
+                      <label for="" class="col-form-label col-sm-2">Código:</label>
+                      <div class="col-sm-6">
+                          <p class="lead mb-0">{{ producto.codigo }}</p>
+                      </div>
+                  </div>
+      
+      
+                  <div class="form-group row">
+                      <label for="" class="col-form-label col-sm-2">Stock:</label>
+                      <div class="col-sm-6">
+                          <p class="lead mb-0">{{ producto.stock }}</p>
+                      </div>
+                  </div>
+      
+      
+                  <div class="form-group row">
+                      <label for="" class="col-form-label col-sm-2">Precio:</label>
+                      <div class="col-sm-6">
+                          <p class="lead mb-0">{{ producto.precio }}</p>
+                      </div>
+                  </div>
+      
+                  <div class="form-group row">
+                      <label for="" class="col-form-label col-sm-2">Descripción:</label>
+                      <div class="col-sm-6">
+                          <p class="lead mb-0">{{ producto.descripcion }}</p>
+                      </div>
+                  </div>
+              </form>
+      
+              <div class="d-grid gap-2 col-14 mx-auto">
+                  <div class="col-sm-6 my-1">
+                      <button class="btn btn-primary btn-lg" role="button"  (click)="ver()">Regresar</button>
+                  </div>
+              </div>
+      
+          </div>
+        </div>
+      </div>
+</div>

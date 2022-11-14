@@ -11,6 +11,7 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
 import { HttpClientModule} from '@angular/common/http';
 import { FormComponent } from './productos/form.component';
 import { FormsModule } from '@angular/forms';
+import { VerComponent } from './productos/ver.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,8 @@ const routes: Routes = [
   {path: 'productos', component: ProductosComponent},
   {path: 'productos/form', component: FormComponent},
   {path: 'productos/form/:id', component: FormComponent},
+  {path: 'productos/ver', component: VerComponent},
+  {path: 'productos/ver/:id', component: VerComponent},
 ];
 
 
@@ -30,6 +33,7 @@ const routes: Routes = [
     ProductosComponent,
     UsuariosComponent,
     FormComponent,
+    VerComponent,
   ],
   imports: [
     BrowserModule,
