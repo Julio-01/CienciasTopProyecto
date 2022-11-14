@@ -3,6 +3,7 @@ package com.cienciasTop.models.service;
 import java.util.List;
 
 import com.cienciasTop.models.entity.Producto;
+import com.cienciasTop.models.entity.Usuario;
 
 public interface IProductoService {
 	public List<Producto> findAll();
@@ -12,8 +13,7 @@ public interface IProductoService {
 	public Producto save(Producto producto);
 	
 	public void delete(Long id);
-	
-	
+		
 }
 
 

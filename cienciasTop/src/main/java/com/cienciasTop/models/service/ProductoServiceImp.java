@@ -6,8 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.cienciasTop.dao.IProductoDao;
+import com.cienciasTop.models.dao.IProductoDao;
 import com.cienciasTop.models.entity.Producto;
+import com.cienciasTop.models.entity.Usuario;
 
 @Service
 public class ProductoServiceImp implements IProductoService{
@@ -42,7 +43,5 @@ public class ProductoServiceImp implements IProductoService{
 		productoDao.deleteById(id);
 		
 	}
-
-	
 
 }

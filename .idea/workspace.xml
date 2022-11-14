@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8ac4c619-7872-4625-b97a-91b96ffa8060" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/UsuarioRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/dao/IUsuarioDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/entity/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/service/IUsuarioService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/service/UsuarioServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/10.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/11.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/12.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/13.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/14.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/15.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/3.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/4.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/5.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/6.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/7.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/8.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/9.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/9fcad483bb8813a152ee92c4fc069a0a61adcb88/0.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/9fcad483bb8813a152ee92c4fc069a0a61adcb88/1.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/9fcad483bb8813a152ee92c4fc069a0a61adcb88/2.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/9fcad483bb8813a152ee92c4fc069a0a61adcb88/index.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/9fcad483bb8813a152ee92c4fc069a0a61adcb88/index.pack.old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/001e0d37eccd46ed2aad9757c0c6b4a6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/005f34f235d7a2bddfdb94ae939377b8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/020c6bb53fa969d9f72b97f6e760c525.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/02e14a621a7552dec68c4746710b95cf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/034e548e9cce67da39a556ac1aee5beb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/052cf792834e7ba99f335f1331f10ef2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/067990b9b4a07039bb6580f6316955e3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/076c39d7f8be2418271476d259b1e710.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/086e498b0cbed64c8ae5342c1eec2ae2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/091b812f2baed90b83fc41b7f2361d7b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/0a3c595b0c80e93127b55fc4104ef003.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/0a76bc535039c7bd06a168ffd4df6ef4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/0ace585313faf969458e04501b5c43d5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/0b9d4c621d6fe6963e5ba60e7e800604.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/0bab00394befeb4951c06daf75fa9ff2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/0cf6417ddb8b912ef75ab6958a9203b5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/0e6eea50b8a75ca6b8fe39f9f5171d50.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/0e7ee74e452c6617e3b7221a8dea499c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/0f79a4017f21dc41c737f8094afb1828.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/10222fd6186b1495c30e6f7351be7c45.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/10e09a60726e9d11f4219c7fc212d0b3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/11d7d2b870410285d744990ce726b249.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/121667293724f76a7233ebb5c319792f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/129dec6efaa6f5a184cec7eadb909ec7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/13ea7b0252f4b70f888df4f2d2956688.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/146b397ea2daa3931c6f7363af98e0fb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/14fcaa3d2fea2eea16f51b0ba09bbb2a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/153ae90375790a8e182902e8f3286a35.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/154ac2eba32001fc86d5a625a7f1b5b0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/15e14a4a702f46a9327939981ecb49c5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/1618ec81c2565deb4e2e44cfbc2d8c09.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/18c61aebc8216fafa60694bddf070593.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/18e4b7633763b82676008a1e7a14c83d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/1a3bbc5a3d211cc2173ad74ba061c253.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/1a4465217d886c73a107a7b489d65d4a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/1a86ddb808c14c4b795269090d1a05a9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/1a93936816e826edac90ef6c82ef18c3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/1aa581f82fbce85418c8cbd67d39b3b4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/1c63de48b9571cfe9c41e4ac0fde20fc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/1e64f33f00a5ad2bce7cdcf3ea0c69fc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/1ebe2193cfa76644833bdd4d0a7df816.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/1f0fe103d77a91ff46b9e8f6401df045.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/1f96b931628780f7bb8fdca14713b822.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/1fbe073970899228a971097d80fc8aaf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/200c576966de2102fab89c3dd6fa3eca.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/20bc5b18a5fbe1ce7bb1044e4d6e7ee5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/212e05a9df265db34196186b0c2dd310.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/25e632d44815b0793aac46774ae96d4e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/2682d098cb33e194bd1db1706cad37d1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/279ea4a76f7a9d1d1769609343e4c2a2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/28511f2fbf225eee45753133ecdb3007.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/28e239788097a44c95d09e6400457124.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/2986ca37a0ea4ee9db372db0d782b7f1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/2a21058aff8eeffaa736aa3640052058.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/2a7cfe2cb6fb65e16c7a158e8bc80fa5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/2b25b7d7dbf219bb2d74f15bcc6abe47.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/2f4ecc3226f03ca0608026f7137846ad.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/31dbbae068e21c47f842078be720e01f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/3304514bdef79f9d3c87007516e54b8f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/34760353b9e52219f79689b98c56ab14.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/3518ee92f194a540eb5c3e1798b2ecd1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/35229ffa1f3bd3f26af86dee2e9fa5cc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/37592de69206896945522bde8610e6e4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/3934d5adfe8d94c6ec0ec1388720865e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/393bb334b7f6cd46f398412f95e4502c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/3a28fb21efa52b71415463d29e0083ea.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/3ac7e963345683c575ba4081a3a867d5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/3ad12567d3a4cbe9c753401d39004bc2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/3b8f12604b821ce62cf34d56950842d2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/3caa351030783f116fb10a69c279040d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/3d3010986353765a4458b09ae53de888.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/3e748ff47a096650db7ef7de0869f900.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/407120e8d81199cd0603d7d7542373ee.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/412b1cd2befc274dc97cc591b079467c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/44224ac2e50240264cf0102a5d59fcc9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/456ecb6b29561d3856765a5aae4ed2fb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/45cca376b504b27005e2d1767231f0fe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/4717fdf930dc9298f76c47e20eece940.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/4906a27744e4b5aee74fcb4e9ff711e6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/4aac1f027547a94e4e1d945a09ac3f67.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/4be9028f90ee2dc5c9c7c2bd2402b17f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/4e481e56f6592ee211618ed773aa09bf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/50a0005462c47df6972089fe6e28ac8a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/517c829409421c44675ae6bdffc1fe85.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/51c084587c94788138ca6446d638c9a4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/52d773efad2694d478db77fd19e3c370.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/531b4d2c16224b61f5da58b9c5ac0e89.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/53dad7559feefe43f9b3aed45776e8aa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/55a0d77e319a3af5539ab8d2b72b1e12.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/56176941377d55cf146bace41706e033.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/566ae8680d57d789c77b1bd2d6d22107.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/568d7e895819010dc0858337d64c2507.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/56ac86c32f017508182d2c0072599c48.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/579b334ae7dac7f2e8959074cb53e640.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/581d8cb6ea42500738e4a1b96067b928.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/5849739b51861f10b038d3062cec6479.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/5904b42101edcfcd9cccebc89d7e57a6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/5910f2ed3429ccb6a26dc19536ea5195.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/59738c233ab0a5e721e33dcdad49975a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/59b4fbc74f16fe3f625bd4744d99f278.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/59fdd943f06b61b7c8cfea7587bdbfc0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/5a6bb8238177677a1b593762dd1d4426.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/5af75db741b8c1049fcb2d6f61def965.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/5bbc0c315c5a11b510d57b21abfb2e8a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/5cc06007b78f9fc6457ed654f9001ff6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/5d163e97ced172930730ef362bd277c1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/5e090e249b4469f13ed30d4ff5e641a6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/60798aaca653aad72c203db144682006.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/60d9a07b1678a9fbf30628e263c38243.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/6136f468a6531d3ac0f405bf1b938f31.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/622f7805d1a7b9f010efb257673819ee.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/63946fe51b0f1028243b0b367a964f7a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/66647da7eb0aba2cb43f3500a13c6e4d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/6993cc13662a24fc9a16d95efc2f07de.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/6a51aa284147e80a63c52cb9a1974cb2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/6d9e9c85122526d9305adee120c8448a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/6da9e9b5fb0e58ac2b60cd5f920d2c8a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/6e410d7ef8aa5331ae827d9343935933.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/6eb18814812b3d6b40f5da05e07cfa5f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/6f1a38cb801fea967e4f0bc0e215d42a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/70bbb148cb8a9a197fee7c83c57f44d5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/71eb9b088ff1701d59fb3765f4f9a4aa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/7333e59df2d8402a917e72fb28c93e20.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/73f070edd6a82821f74986dbd8e1e6b3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/755d4012f699971ef521955a6585ce03.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/7683bc1d638ff354fa4113245e25f2ee.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/76eb484fc13c03030920961abe4abdba.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/778fac0e0c69c7e39440f4ffa6feae2f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/779bacc758a085e703c5a0544c2a14b5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/7996bd0c428d6d76cccacb1fc264bc13.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/7bbaab564b307b7c60768ab9450bb26c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/7c6a997e6b94d1160bc95eff7e13a79b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/7ef3628277c2eaff6eca4c54fe36761b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/7f3f421d58cce765422131a901fc12ac.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/7fc0953c862eed679983ba6d46b44d7d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/80814144d9689a18dc92e1e0fbb1b992.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/816e97fc397fe8d1c569d2601199a326.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/8314700748824b39e2f03a279495e3bf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/8698e5e22d46542c2726e940f54446f0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/8798f338a14af68870441258198af987.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/88b826351884436465e215d57bed1c11.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/9014c5440bd113a7185b17af1762f807.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/916b323c006bc888f4647977eac4c732.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/923f6a6f17a7fe2736f1a545b373688f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/9367ec85bd2b8b93a2691e6a5ca94efd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/93c7a5ad79b470a7473b3f4e8784d745.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/940a278532b9d68d964ab8ac0289a085.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/95a32464ff2c8a9417b058d1c5ed08d9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/968d6a286fae112475a79f272c1e97bb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/96bd65a12114e99a31a11320ea307b9a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/971cbac1a28712eb56c4e652b51f10bf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/97b6b47681f91ebc468c8ccec411ebb5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/98e3b218334e17b66e091c423bab7065.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/997b10779661a5fd5c5c1ae0ecb110a2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/99d2204cd5e4a0a8c0cc1669dea1a88b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/9a15dd8ce09f8ca80ac8ff839648e7c9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/9aace3f87626576b233fa6876c043984.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/9c03a9cb582214e717ecd68fa785e2df.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/9d1cc2e23b22c6ae90a60855b5a85d93.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/9d98e9aa4d216b4abf1d11a090858c7a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/9efa8f58deec2a9a6c78deea05b0f49e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/a039c407ed9b64dcec49920de9045711.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/a257797442e8bf669d51e5e9e7971c1b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/a2a307d4794f81dec37c81405ec84cca.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/a3cf8880609761cc7984bb30c0982b3b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/a4bd70f202bf5a600da7d79fe05a3d34.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/a5adbeebb8428a824e0bff3607dd117d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/a735ae18726f741031246910eaa90a9f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/a756916264bc735b663776ac09574620.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/a7a6ed49c8c50a8b7da62caedfa58069.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/a9141d815cfd855e6785ee3d8b8b3bf5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/a9761c100180b8b56456753fc196e45e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/abd0abd7546b611d260c113cd624a62a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/abdf4fcb39ca14cbb9bb0650c811780a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/ad5d886e429e34e087618899395b930c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/ae13bd175098f351bacd530e73a71033.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/aeead20f00b8d4330696b60347d2d07f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/b0f6ec73fd047e7ce3aa2129a800e951.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/b22e35387539284afd58efa8049ba3f5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/b3b9223775b4425010232f03dabfbab1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/b4a597e4a0409f423a38791f3866065b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/b58364e8f4012bcfcb28fdc0ed0f47e5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/b6708ec211256f880331492d0645774e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/b687d3b90c668b03cb197e9032e16a32.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/b6b2cb81b57dd3c51cffe3d6fb3bc047.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/b8c6f9adc8110e8b63951a5ad6bb640d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/b8ce441c9cd6941c6126ffc8b52ecec5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/b9954ea3b8a5fcc5c539c78973127c9e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/baaf934024412951acd3cd003d2d2e74.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/baf04f24ef4c19eebc67cf2c7e6fe2b1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/bbe3d99486c651eb4571e424257d343c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/bd91762aedbc33fa579cfc59fe5cda29.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/be0a96a4c73b93e81599ed39876ccf2c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/c0e80ddb3eb640c7931a9a87761882bd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/c1e3fefcb59809c3f42de4a084023d6e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/c32ca86667978869c1b75318b7877b1f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/c61ac4ca82117c5f55f75e689dd7eca4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/c9fa6d822aae6fff8cc7e858feb04fa5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/ca408650059970df6f54245556d3dde2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/ca5d40a23c7260eb679c136e4c9a7642.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/caee5111e49beffeb4627cfca7c49522.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/ccbc2f0bb619cea7a1051b9a88bc2e9e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/cce22a7381da9297e1aeffe8b59f8c2f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/cd4a542b2b6af2fcd8b71e935439b0b0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/ceca322c8c9f637e742fed01d2ba8500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/cf321c48f2cf6903c310da85d59ea658.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/d16f1d6b6e2aab1ed2735a2d984c2b86.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/d2cb78f6b73ddab36970fe440a2dffc4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/d4e4674891432adbd1b1b24eafde370c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/d5da6eb08bbfff10b8e502a52362e2da.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/d608cfa55636ba591db3d88c34e08bd3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/d61837ef1f4b76d8cd41646df1a7bef4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/d8e1dfddea1dc3664099957a746c37d7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/d93fb93c800702b3c7adbe98e51565a4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/da16a5cefdb1065908d7818a88220c0b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/da38c6275f8d4cb496396be1dd40c180.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/daa8f30402f7c93ab8cedd051597a99c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/dbc90e7c60f6f219ce46652f29283501.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/dcfe70b419f7831c123123dea60daece.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/dd3cafd4d7fffbe004672bd5e979bbba.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/e07240d4c8acbe9dafd1d94c024b6b3d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/e10eca56d70b70a1f5a9cf2de557050a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/e1d36470b6643f67e1dd56626f110f99.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/e1d9c773feaaba692eab5289ecc5a998.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/e74d818c9893901e3df5bd7eb4a499d0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/e77b728453077b87218f78f3ede520d8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/e920679eb6b6c37f3c586e64bf651be2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/eb295c6b38437a9427d8bd260d2b656d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/ebc04eb82f5023f849a34fab0e0487a0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/ebf7f73508112922e22db014cd6bc266.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/ec63c355ad58fcb2972f06fe02450b03.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/ec7a989bab35e631d8011e73dec51873.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/ed68a126a5a90ef5dcb580055165aa23.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/ee633838c7601cd32371cc46d929fe44.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/ef4f838faa78f8f76481d468f9f23e77.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/ef7f73aa19b36d78d968f1629b8906f8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/f0ae555356928336ceac83d92269f414.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/f16323fa398ee142a360879f652f69a7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/f2a55fb897565445c3d9b4471260cada.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/f3e5c3db76a4492eebf376130f05cdaf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/f56107a73d02aa8621de248bc73ba542.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/f62a2f8e51edda7be69bc1ba8f9ad23f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/f7af7d01ee6dca48454d05fc7fef4244.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/f7c1ed80a64f9c0f44e786e31b99d698.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/f8adf820b4e20a64584860093537492e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/f8cfa4d0bd69a0e36a560bdcb8092e7d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/f8fe237a0e6697a107ba2d292d8d7a03.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/f9cf658fd098cd2bdd7126544a5c34d6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/fa8701f51a83481d0e551118f353dd49.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/fb41916900feed2f2f43eb787ab45410.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/fb65d416704bbd57054417b08a661107.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/fbddcc68050ab4f23301f54afe23e547.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/fe51aef6e38d791b263f1f52d2f1be53.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/ff0d7a2f484fcaff685976695eb4cada.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/ff158d45de3ab984330d77a90c901b7a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/babel-webpack/ff5848006aa473e733e9030cf49bc999.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/src/app/usuarios/form.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/src/app/usuarios/form.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/src/app/usuarios/form.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/src/app/usuarios/usuario.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/src/app/usuarios/usuario.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciencias_top_angular/src/app/usuarios/usuarios.json.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/dao/IProductoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/dao/IProductoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/ProductoRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/ProductoRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/service/IProductoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/service/IProductoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/service/ProductoServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/service/ProductoServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cienciasTop/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/resources/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/cienciasTop/src/main/resources/import.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/2.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/0f20568660a3eba53280fb576143823427ca1a45/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/src/app/footer/footer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/src/app/footer/footer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/src/app/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/src/app/productos/form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/src/app/productos/form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/src/app/usuarios/usuarios.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/src/app/usuarios/usuarios.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/src/app/usuarios/usuarios.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/src/app/usuarios/usuarios.component.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HNRDKyehZ5oWEIODEpeHCna21d" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.google.cloudcode.ide_session_index": "20221114_0001",
+    "last_opened_file_path": "/home/mvg/Escritorio/6toSemestre/IngenieriaSoftware/CienciasTopProyecto",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/snap/intellij-idea-ultimate/386/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="CienciasTopProyecto" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="CienciasTopProyecto" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ac4c619-7872-4625-b97a-91b96ffa8060" name="Changes" comment="" />
+      <created>1668123459758</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668123459758</updated>
+      <workItem from="1668123544870" duration="823000" />
+      <workItem from="1668178900102" duration="349000" />
+      <workItem from="1668400773104" duration="1373000" />
+      <workItem from="1668402311974" duration="445000" />
+      <workItem from="1668432486409" duration="683000" />
+      <workItem from="1668456806500" duration="1279000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

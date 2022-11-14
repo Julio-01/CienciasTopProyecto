@@ -1,0 +1,81 @@
+<div class="card bg-dark text-white container my-2">
+    <div class="card-header">{{titulo}}</div>
+    <div class="card-body">
+
+        <form>
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Nombre</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="usuario.nombre" name="nombre">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Numero de Cuenta</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="usuario.numeroDeCuenta" name="numeroDeCuenta">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Numero de Celular</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="usuario.numeroDeCelular" name="numeroDeCelular">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Correo Electronico</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="usuario.correoElectronico" name="correoElectronico">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Carrera</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="usuario.carrera" name="carrera">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Rol</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="usuario.rol" name="rol">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Contrasena</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="usuario.contrasena" name="contrasena">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Puma Puntos</label>
+                <div class="col-sm-6">
+                    <input type="number" class="form-control" [(ngModel)]="usuario.pumaPuntos" name="pumaPuntos">
+                </div>
+            </div>
+
+
+
+
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <button class="btn btn-primary" role="button" (click)="create()" *ngIf="!usuario.id else elseBlock">Añadir</button>                   
+                    <ng-template #elseBlock>
+                        <button class="btn btn-secondary" role="button" (click)="update()">Actualizar</button>                   
+                    </ng-template>
+
+
+
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+</div>
