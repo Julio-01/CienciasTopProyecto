@@ -9,7 +9,6 @@ import { ProductosComponent } from './productos/productos.component';
 import { RouterModule, Routes } from '@angular/router';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { HttpClientModule} from '@angular/common/http';
-import { FormComponent } from './productos/form.component';
 import { FormsModule } from '@angular/forms';
 import { VerComponent } from './productos/ver.component';
 
@@ -18,8 +17,6 @@ const routes: Routes = [
   {path: '', redirectTo: '/productos', pathMatch: 'full'},
   {path: 'usuarios', component: UsuariosComponent },
   {path: 'productos', component: ProductosComponent},
-  {path: 'productos/form', component: FormComponent},
-  {path: 'productos/form/:id', component: FormComponent},
   {path: 'productos/ver', component: VerComponent},
   {path: 'productos/ver/:id', component: VerComponent},
 ];
@@ -32,7 +29,6 @@ const routes: Routes = [
     FooterComponent,
     ProductosComponent,
     UsuariosComponent,
-    FormComponent,
     VerComponent,
   ],
   imports: [
