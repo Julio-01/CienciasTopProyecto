@@ -35,7 +35,7 @@ export class ProductosComponent implements OnInit {
       text: `¿Seguro que desea elimiar el producto ${producto.nombre}?`,
       icon: 'warning',
       showCancelButton: true,
-      confirmButtonText: 'si, Eliminar!',
+      confirmButtonText: 'Sí, Eliminar!',
       cancelButtonText: 'No, cancelar!',
       reverseButtons: true
     }).then((result) => {
