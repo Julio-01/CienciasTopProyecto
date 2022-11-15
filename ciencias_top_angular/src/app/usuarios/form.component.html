@@ -38,17 +38,26 @@
                 </div>
             </div>
 
+            
+
             <div class="form-group row">
-                <label for="" class="col-form-label col-sm-2">Rol</label>
+                <label for="" class="col-form-label col-sm-2">Contraseña</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" [(ngModel)]="usuario.rol" name="rol">
+                    <input type="text" class="form-control" [(ngModel)]="usuario.contrasena" name="contrasena">
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Roles</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="usuario.roles" name="roles">
                 </div>
             </div>
 
             <div class="form-group row">
-                <label for="" class="col-form-label col-sm-2">Contrasena</label>
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" [(ngModel)]="usuario.contrasena" name="contrasena">
+                <label for="" class="col-form-label col-sm-2">Enabled</label>
+                <div class="col-sm-6 form-check">
+                    <input type="checkbox" class="form-check-input" [(ngModel)]="usuario.enabled" name="enabled">
                 </div>
             </div>
 
