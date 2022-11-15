@@ -6,4 +6,6 @@ import com.cienciasTop.models.entity.Usuario;
 
 public interface IUsuarioDao extends CrudRepository<Usuario, Long>{
 	
+	public Usuario findByNumeroDeCuenta(String numeroDeCuenta);
+
 }

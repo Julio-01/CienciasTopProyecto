@@ -1,20 +1,16 @@
 export class Usuario {
 
-    id: number;
+    id:number;
+    //username
+    numeroDeCuenta:string;
+    nombre:string;
+    numeroDeCelular:string;
+    correoElectronico:string;
+    carrera:string;
+    //password
+    contrasena:string;
+    pumaPuntos:number;
+    enabled: boolean;
+    roles:string[]=[]
 
-    nombre: string;
-
-    numeroDeCuenta: string;
-
-    numeroDeCelular: string;
-    
-    correoElectronico: string;
-
-    carrera: string;
-    
-    pumaPuntos: number;
-
-    rol: string;
-
-    contrasena: string;
 }
