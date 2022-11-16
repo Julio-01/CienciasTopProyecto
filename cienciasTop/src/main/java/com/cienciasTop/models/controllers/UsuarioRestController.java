@@ -2,6 +2,7 @@ package com.cienciasTop.models.controllers;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.ArrayList;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,9 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cienciasTop.models.entity.Usuario;
+import com.cienciasTop.models.entity.Role;
 import com.cienciasTop.models.service.IUsuarioService;
+import com.cienciasTop.models.service.IRoleService;
 
 @CrossOrigin(origins= {"http://localhost:4200"})
 @RestController
@@ -29,6 +32,8 @@ import com.cienciasTop.models.service.IUsuarioService;
 public class UsuarioRestController {
 	@Autowired
 	private IUsuarioService usuarioService;
+	@Autowired
+	private IRoleService roleService;
 	
 	@Secured({"ROLE_ADMIN"})
 	@GetMapping("/usuarios")
@@ -62,6 +67,20 @@ public class UsuarioRestController {
 	public ResponseEntity<?> create(@RequestBody Usuario usuario) {
 		Usuario usuarioNuevo = null;
 		Map<String,Object> response = new HashMap<>();
+		List<Role> rolesExistentes = new ArrayList<>();
+
+		try {
+			for (Role role : usuario.getRoles()) {
+				Role rolExistente = roleService.findByNombre(role.getNombre());
+				rolesExistentes.add(rolExistente);
+			}
+
+			usuario.setRoles(rolesExistentes);
+		} catch(Exception e) {
+			response.put("mensaje", "Error al asignar roles");
+			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+
 		try {
 			usuarioNuevo = usuarioService.save(usuario);
 		}catch(DataAccessException e) {
@@ -69,7 +88,7 @@ public class UsuarioRestController {
 			response.put("error",e.getMessage().concat(": ").concat(e.getMostSpecificCause().getMessage()));
 			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
-		response.put("mensaje", "El producto ha sido creado con éxito :3");
+		response.put("mensaje", "El usuario ha sido creado con éxito :3");
 		response.put("producto", usuarioNuevo);
 		return new ResponseEntity<Map<String, Object>>(response,HttpStatus.CREATED);
 	}
@@ -81,9 +100,11 @@ public class UsuarioRestController {
 		Map<String,Object> response = new HashMap<>();
 		//Error con el id ingresado.
 		if(currentUsuario == null) {
-			response.put("mensaje", "Error: no se puede editar el producto ID:".concat(id.toString().concat(" no existe en la base de datos :(.")));
+			response.put("mensaje", "Error: no se puede editar el usuario ID:".concat(id.toString().concat(" no existe en la base de datos :(.")));
 			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.NOT_FOUND);
 		}
+
+		List<Role> rolesExistentes = new ArrayList<>();
 		
 		try {
 			currentUsuario.setNombre(usuario.getNombre());
@@ -93,15 +114,21 @@ public class UsuarioRestController {
 			currentUsuario.setContrasena(usuario.getContrasena());
 			currentUsuario.setEnabled(usuario.getEnabled());
 			currentUsuario.setPumaPuntos(usuario.getPumaPuntos());
-			currentUsuario.setRoles(usuario.getRoles());
+
+			for (Role role : usuario.getRoles()) {
+				Role rolExistente = roleService.findByNombre(role.getNombre());
+				rolesExistentes.add(rolExistente);
+			}
+
+			currentUsuario.setRoles(rolesExistentes);
 			usuarioUpdate = usuarioService.save(currentUsuario);
 			
 		}catch(DataAccessException e) {
-			response.put("mensaje", "Error al actualizar el producto en la base de datos.");
+			response.put("mensaje", "Error al actualizar el usuario en la base de datos.");
 			response.put("error",e.getMessage().concat(": ").concat(e.getMostSpecificCause().getMessage()));
 			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
-		response.put("mensaje", "El producto ha sido actualizado con éxito :3");
+		response.put("mensaje", "El usuario ha sido actualizado con éxito :3");
 		response.put("producto", usuarioUpdate);
 		return new ResponseEntity<Map<String, Object>>(response,HttpStatus.CREATED);
 	}
@@ -112,11 +139,11 @@ public class UsuarioRestController {
 		try {
 			usuarioService.delete(id);
 		}catch(DataAccessException e) {
-			response.put("mensaje", "Error al eliminar el producto en la base de datos.");
+			response.put("mensaje", "Error al eliminar el usuario en la base de datos.");
 			response.put("error",e.getMessage().concat(": ").concat(e.getMostSpecificCause().getMessage()));
 			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
-		response.put("mensaje", "El producto ha sido eliminado con éxito");
+		response.put("mensaje", "El usuario ha sido eliminado con éxito");
 		return new ResponseEntity<Map<String, Object>>(response,HttpStatus.OK);
 	}
 }
