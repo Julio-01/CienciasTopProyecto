@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ac4c619-7872-4625-b97a-91b96ffa8060" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/ProductoRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/ProductoRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/src/app/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/src/app/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/src/app/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/src/app/productos/form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/src/app/productos/form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/src/app/productos/productos.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/src/app/productos/productos.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/src/app/productos/productos.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/src/app/productos/productos.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/Equipo8" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -73,7 +78,7 @@
       <workItem from="1668456806500" duration="1279000" />
       <workItem from="1668473891114" duration="455000" />
       <workItem from="1668529500699" duration="3170000" />
-      <workItem from="1668587686935" duration="281000" />
+      <workItem from="1668587686935" duration="831000" />
     </task>
     <servers />
   </component>
