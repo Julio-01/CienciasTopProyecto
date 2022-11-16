@@ -4,6 +4,7 @@ import { ProductoService } from './producto.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import swal from 'sweetalert2';
 import { Observable } from 'rxjs';
+import { Usuario } from '../usuarios/usuario';
 
 
 @Component({
@@ -15,6 +16,7 @@ export class FormComponent implements OnInit {
 
   titulo: string = "Añadir Producto"
   producto: Producto = new Producto()
+  usuario: Usuario = new Usuario()
 
   constructor(private productoService: ProductoService, private router: Router, private activateRoute: ActivatedRoute) { }
 
@@ -48,6 +50,39 @@ export class FormComponent implements OnInit {
       }
     )
   }
+
+  public rentar():void{
+
+    // this.productoService.rentarProducto(this.producto.id,this.usuario.id).subscribe(response =>
+    //   {
+    //     this.router.navigate(['/productos/rentar'])
+    //     swal.fire('Rentado', `Producto ${response.nombre} rentado con éxito`, 'success')
+    //   }
+    // )
+    this.activateRoute.params.subscribe(params => {
+      let idP = params['idP']
+      let idU = params['idU']
+      if(idP && idU){
+
+        
+        this.productoService.rentarProducto(idP,idU).subscribe((resp)=> 
+          swal.fire('Nuevo Producto', `Producto ${this.producto.nombre } creado con éxito`, 'success'))
+
+
+        {
+          this.router.navigate(['/productos'])
+        }
+      }
+    })
+
+    // this.productoService.rentarProducto(this.producto.id,this.usuario.id).subscribe(response => 
+    //   {
+    //   this.router.navigate(['/productos/rentar'])
+    //   swal.fire('Producto Rentado', `${response.nombre} Rentado con éxito`, 'success')
+    //   }
+    // )
+  }
+
 
 
 

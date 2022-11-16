@@ -112,4 +112,19 @@ export class ProductoService {
       })
     )
   }
+
+  rentarProducto(idP,idU): Observable<Map<String, Object>>{
+    return this.rentarProducto(`${this.urlEndPoint}/${idP}/usuario/${idU}`, {headers: this.agregarAuthorizationHeader() }).pipe(                                                                
+      catchError(e => {
+
+        if(this.isNoAutorizado(e)){
+          return throwError( () => e );
+        }
+
+        this.router.navigate(['/productos']);
+        Swal.fire('Error al rentar', e.error.mensaje, 'error');
+        return throwError( () => e );
+      })
+    )
+  }
 }

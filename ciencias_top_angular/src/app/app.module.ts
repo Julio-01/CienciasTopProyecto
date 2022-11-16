@@ -25,6 +25,7 @@ const routes: Routes = [
   {path: 'productos/form/:id', component: FormComponent},
   {path: 'productos/ver', component: VerComponent},
   {path: 'productos/ver/:id', component: VerComponent},
+  // {path: 'productos/form/:idP/:udU', component: ProductosComponent},
   {path: 'login', component: LoginComponent},
   {path: 'usuarios', component: UsuariosComponent},
   {path: 'usuarios/form', component: UsuariosFormComponent},
@@ -59,3 +60,4 @@ const routes: Routes = [
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+ 
