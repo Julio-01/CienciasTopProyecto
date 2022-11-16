@@ -17,7 +17,7 @@
               <div class="bg-primary d-flex align-items-center justify-content-center shadow-1-strong" style="width: 60px; height: 35px" *ngIf="authService.hasRole('ROLE_ADMIN')">
                 <p class="text-white mb-0 small" [routerLink]="['/productos/form', producto.id]">Editar</p>
               </div>
-              <div class="bg-primary d-flex align-items-center justify-content-center shadow-1-strong" style="width: 60px; height: 35px" ; background-color: #0F96D3;"; *ngIf="authService.hasRole('ROLE_USER')">
+              <div class="bg-primary d-flex align-items-center justify-content-center shadow-1-strong" style="width: 60px; height: 35px" ; background-color: #0F96D3; *ngIf="authService.hasRole('ROLE_USER')">
                 <p class="text-white mb-0 small" [routerLink]="['/productos/form', producto.id]">Rentar</p>
               </div>
             <div class="d-flex align-items-center justify-content-center shadow-1-strong" style="width: 60px; height: 35px; background-color: #0F96D3;">
