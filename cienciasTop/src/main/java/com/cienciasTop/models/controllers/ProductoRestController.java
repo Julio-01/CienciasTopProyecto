@@ -1,5 +1,6 @@
 package com.cienciasTop.models.controllers;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -125,7 +126,7 @@ public class ProductoRestController {
 		return new ResponseEntity<Map<String, Object>>(response,HttpStatus.OK);
 	}
 
-	@GetMapping("rentar/producto/{idP}/usuario/{idU}")
+	@GetMapping("productos/{idP}/usuario/{idU}")
 	public ResponseEntity<?> rentProduct(@PathVariable Long idP, @PathVariable Long idU  ) {
 		Producto producto = this.productoService.findById(idP);
 		Usuario usuario  =  usuarioService.findById(idU);

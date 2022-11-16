@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ac4c619-7872-4625-b97a-91b96ffa8060" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/ProductoRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/ProductoRestController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +33,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "com.google.cloudcode.ide_session_index": "20221114_0002",
+    "com.google.cloudcode.ide_session_index": "20221116_0000",
     "last_opened_file_path": "/home/mvg/Escritorio/6toSemestre/IngenieriaSoftware/CienciasTopProyecto",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "ts.external.directory.path": "/snap/intellij-idea-ultimate/386/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
   }
 }]]></component>
@@ -67,6 +72,8 @@
       <workItem from="1668432486409" duration="683000" />
       <workItem from="1668456806500" duration="1279000" />
       <workItem from="1668473891114" duration="455000" />
+      <workItem from="1668529500699" duration="3170000" />
+      <workItem from="1668587686935" duration="281000" />
     </task>
     <servers />
   </component>
