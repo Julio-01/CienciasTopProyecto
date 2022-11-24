@@ -9,16 +9,28 @@ import { ProductosComponent } from './productos/productos.component';
 import { RouterModule, Routes } from '@angular/router';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { HttpClientModule} from '@angular/common/http';
-import { FormComponent } from './productos/form.component';
+// import { ProductosFormComponent } from './productos/form.component';
+import { UsuariosFormComponent } from './usuarios/form.component';
 import { FormsModule } from '@angular/forms';
+import { VerComponent } from './productos/ver.component';
+import { FormComponent } from './productos/form.component';
+import { UsuarioPerfilComponent } from './usuarios/perfil.component';
+import { LoginComponent } from './usuarios/login.component';
 
 
 const routes: Routes = [
   {path: '', redirectTo: '/productos', pathMatch: 'full'},
-  {path: 'usuarios', component: UsuariosComponent },
   {path: 'productos', component: ProductosComponent},
   {path: 'productos/form', component: FormComponent},
   {path: 'productos/form/:id', component: FormComponent},
+  {path: 'productos/ver', component: VerComponent},
+  {path: 'productos/ver/:id', component: VerComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'usuarios', component: UsuariosComponent},
+  {path: 'usuarios/form', component: UsuariosFormComponent},
+  {path: 'usuarios/form/:id', component: UsuariosFormComponent},
+  {path: 'usuarios/perfil', component: UsuarioPerfilComponent},
+
 ];
 
 
@@ -28,8 +40,13 @@ const routes: Routes = [
     HeaderComponent,
     FooterComponent,
     ProductosComponent,
-    UsuariosComponent,
+    // ProductosFormComponent,
     FormComponent,
+    LoginComponent,
+    UsuariosComponent,
+    VerComponent,
+    UsuariosFormComponent,
+    UsuarioPerfilComponent,
   ],
   imports: [
     BrowserModule,

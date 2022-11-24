@@ -12,12 +12,14 @@ import javax.persistence.Table;
 @Entity
 @Table(name="productos")
 public class Producto implements Serializable{
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private long id;
-	@Column(name="nombre")
+	private Long id;
+
+	@Column(name="nombre", nullable = false)
 	private String nombre;
-	@Column(name="codigo")
+	@Column(name="codigo", nullable = false, unique=true)
 	private String codigo;
 	@Column(name="stock")
 	private Integer stock;
@@ -25,8 +27,10 @@ public class Producto implements Serializable{
 	private Integer precio;
 	@Column(name="descripcion")
 	private String descripcion;
+    @Column(name="tiempo")
+    private Integer tiempo;
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
@@ -73,6 +77,14 @@ public class Producto implements Serializable{
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	
+
+	public Integer getTiempo() {
+		return tiempo;
+	}
+
+	public void setTiempo(Integer tiempo) {
+		this.tiempo = tiempo;
+	}
+
 	private static final long serialVersionUID = 1L;
 }

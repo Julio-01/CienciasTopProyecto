@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Producto } from './producto';
 import { ProductoService } from './producto.service';
 import Swal from 'sweetalert2';
+import { AuthService } from '../usuarios/auth.service';
 
 @Component({
   selector: 'app-productos',
@@ -12,7 +13,7 @@ export class ProductosComponent implements OnInit {
 
   productos: Producto[];
 
-  constructor(private productoService: ProductoService ) { }
+  constructor(private productoService: ProductoService, public authService: AuthService ) { }
 
   ngOnInit(): void {
     this.productoService.getProductos().subscribe(
@@ -34,7 +35,7 @@ export class ProductosComponent implements OnInit {
       text: `¿Seguro que desea elimiar el producto ${producto.nombre}?`,
       icon: 'warning',
       showCancelButton: true,
-      confirmButtonText: 'si, Eliminar!',
+      confirmButtonText: 'Sí, Eliminar!',
       cancelButtonText: 'No, cancelar!',
       reverseButtons: true
     }).then((result) => {

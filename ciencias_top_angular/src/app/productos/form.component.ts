@@ -32,19 +32,19 @@ export class FormComponent implements OnInit {
   }
 
   public create():void{
-    this.productoService.create(this.producto).subscribe(producto =>
+    this.productoService.create(this.producto).subscribe(response =>
       {
         this.router.navigate(['/productos'])
-        swal.fire('Nuevo Producto', `Producto ${producto.nombre} creado con éxito`, 'success')
+        swal.fire('Nuevo Producto', `Producto ${response.producto.nombre} creado con éxito`, 'success')
       }
     )
   }
 
   public update():void{
-    this.productoService.update(this.producto).subscribe(producto => 
+    this.productoService.update(this.producto).subscribe(response => 
       {
       this.router.navigate(['/productos'])
-      swal.fire('Producto Actualizado', `${producto.nombre} actualizado con éxito`, 'success')
+      swal.fire('Producto Actualizado', `${response.producto.nombre} actualizado con éxito`, 'success')
       }
     )
   }

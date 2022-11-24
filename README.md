@@ -9,7 +9,6 @@
 * Manjarrez Angeles Valeria Fernanda.
 * González Morales Blanca Angélica
 
-
 ### Equipo 8:
 
 * Torres Escobedo Julio Cesar
@@ -17,3 +16,4 @@
 * Memik Hernández Toprak
 * Vázquez González Melissa
 * Rojas Reyes Saúl Adrián
+

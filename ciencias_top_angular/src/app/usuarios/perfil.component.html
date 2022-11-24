@@ -1,0 +1,58 @@
+<div class="card bg-dark text-white container my-2">
+    <div class="card-header">{{titulo}}</div>
+    <div class="card-body">
+
+        <div>
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Nombre</label>
+                <div class="col-sm-6">
+                    <p>{{ this.usuario.nombre }}</p>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Número de Cuenta</label>
+                <div class="col-sm-6">
+                    <p>{{ this.usuario.numeroDeCuenta }}</p>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Número de Celular</label>
+                <div class="col-sm-6">
+                    <p>{{ this.usuario.numeroDeCelular }}</p>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Correo Electronico</label>
+                <div class="col-sm-6">
+                    <p>{{ this.usuario.correoElectronico }}</p>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Carrera</label>
+                <div class="col-sm-6">
+                    <p>{{ this.usuario.carrera }}</p>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Puma Puntos</label>
+                <div class="col-sm-6">
+                    <p>{{ this.usuario.pumaPuntos }}</p>
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <label for="" class="col-form-label col-sm-2">Rol</label>
+                <div class="col-sm-6">
+                    <p>{{ this.usuario.roles.join(" ") }}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
