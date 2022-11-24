@@ -14,3 +14,6 @@
 * Torres Escobedo Julio Cesar
 * García Albarrán Luis Antonio
 * Memik Hernández Toprak
+* Vázquez González Melissa
+* Rojas Reyes Saúl Adrián
+
