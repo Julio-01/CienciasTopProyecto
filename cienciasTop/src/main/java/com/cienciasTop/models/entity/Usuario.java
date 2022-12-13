@@ -15,7 +15,9 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
-
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.Pattern;  
 @Entity
 @Table(name = "usuarios")
 public class Usuario implements Serializable {
@@ -23,19 +25,22 @@ public class Usuario implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	@Column(name = "numeroDeCuenta")
+	@Column(name = "numeroDeCuenta", length = 10, unique = true, nullable = false)
 	private String numeroDeCuenta;
-	@Column(name = "nombre")
+	@Column(name = "nombre", nullable = false)
 	private String nombre;
-	@Column(name = "numeroDeCelular")
+	@Column(name = "numeroDeCelular", nullable = false)
 	private String numeroDeCelular;
-	@Column(name = "correoElectronico")
+	@Pattern(regexp="^[A-Za-z0-9._+%-]+@[A-Za-z0-9.-]+.unam.mx$", message = "El correo no es del dominio unam.mx")
+	@Column(name = "correoElectronico", unique = true, nullable = false)
 	private String correoElectronico;
-	@Column(name = "carrera")
+	@Column(name = "carrera", nullable = false)
 	private String carrera;
-	@Column(name = "contrasena", length = 60)
+	@Column(name = "contrasena", length = 60, nullable = false)
 	private String contrasena;
-	@Column(name = "pumaPuntos")
+	@Min(0)
+	@Max(500)
+	@Column(name = "pumaPuntos", nullable = false)
 	private Integer pumaPuntos;
 	@Column(name = "enabled")
 	private Boolean enabled;

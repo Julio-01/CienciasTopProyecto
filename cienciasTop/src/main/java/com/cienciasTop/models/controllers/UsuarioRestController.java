@@ -40,7 +40,7 @@ public class UsuarioRestController {
 	public List<Usuario> index(){
 		return usuarioService.findAll();
 	}
-	@Secured({"ROLE_ADMIN","ROLE_USER"})
+	@Secured({"ROLE_ADMIN","ROLE_USER","ROL_PROV"})
 	@GetMapping("/usuarios/{id}")
 	public ResponseEntity<?> show(@PathVariable Long id) {
 		Usuario usuario = null;

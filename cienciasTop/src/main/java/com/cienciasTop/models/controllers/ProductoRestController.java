@@ -37,7 +37,7 @@ public class ProductoRestController {
 		 return productoService.findAll();
 	}
 
-	@Secured({"ROLE_ADMIN","ROL_USER"})
+	@Secured({"ROLE_ADMIN","ROL_USER","ROL_PROV"})
 	@GetMapping("/productos/{id}")
 	public ResponseEntity<?> show(@PathVariable Long id) {
 
@@ -62,7 +62,7 @@ public class ProductoRestController {
 		return new ResponseEntity<Producto>(producto, HttpStatus.OK);
 	}
 
-	@Secured("ROLE_ADMIN")
+	@Secured({"ROLE_ADMIN","ROL_PROV"})
 	@PostMapping("/productos")
 	public ResponseEntity<?> create(@RequestBody Producto producto) {
 		Producto productoNuevo= null;
@@ -81,7 +81,7 @@ public class ProductoRestController {
 
 
 
-	@Secured("ROLE_ADMIN")
+	@Secured({"ROLE_ADMIN","ROL_PROV"})
 	@PutMapping("/productos/{id}")
 	public 	ResponseEntity<?> update(@RequestBody Producto producto, @PathVariable Long id) {
 		Producto currentProducto = this.productoService.findById(id);
@@ -111,7 +111,7 @@ public class ProductoRestController {
 	}
 
 
-	@Secured("ROLE_ADMIN")
+	@Secured({"ROLE_ADMIN","ROL_PROV"})
 	@DeleteMapping("/productos/{id}")
 	public ResponseEntity<?> delete(@PathVariable Long id) {
 		Map<String,Object> response = new HashMap<>();

@@ -37,7 +37,7 @@ export class UsuarioService {
 
     if(e.status==403){
       Swal.fire('Acceso denegado', `Hola ${this.authService.usuario.numeroDeCuenta} no tienes acceso a este recurso!`, 'warning');
-      this.router.navigate(['/usuarios'])
+      this.router.navigate(['/usuarios']);
       return true;
     }
     return false;
@@ -52,8 +52,8 @@ export class UsuarioService {
         }
 
 
-        this.router.navigate(['/usuarios']);
-        Swal.fire('Error al editar', e.error.mensaje, 'error');
+        this.router.navigate(['/usuarios/form']);
+        Swal.fire('Error al insertar datos', "El correo no es del dominio correcto (unam.mx), los pumapuntos exceden los limites permitidos (0-500) o hay datos incorrectos (datos repetidos o sin llenar)", 'error');
         return throwError( () => e );
       })
     );
@@ -68,8 +68,8 @@ export class UsuarioService {
         }
 
 
-        this.router.navigate(['/usuarios']);
-        Swal.fire('Error al editar', e.error.mensaje, 'error');
+        this.router.navigate(['/usuarios/form']);
+        Swal.fire('Error al insertar datos', "El correo no es del dominio correcto (unam.mx), los pumapuntos exceden los limites permitidos (0-500) o hay datos incorrectos (datos repetidos o sin llenar)", 'error');
         return throwError( () => e );
       })
     );
@@ -85,7 +85,7 @@ export class UsuarioService {
 
 
         this.router.navigate(['/usuarios']);
-        Swal.fire('Error al editar', e.error.mensaje, 'error');
+        Swal.fire('Error al insertar datos', "El correo no es del dominio correcto (unam.mx), los pumapuntos exceden los limites permitidos (0-500) o hay datos incorrectos (datos repetidos o sin llenar)", 'error');
         return throwError( () => e );
       })
     );
@@ -101,7 +101,7 @@ export class UsuarioService {
 
 
         this.router.navigate(['/usuarios']);
-        Swal.fire('Error al editar', e.error.mensaje, 'error');
+        Swal.fire('Error al insertar datos', "El correo no es del dominio correcto (unam.mx), los pumapuntos exceden los limites permitidos (0-500) o hay datos incorrectos (datos repetidos o sin llenar)", 'error');
         return throwError( () => e );
       })
     );
@@ -117,7 +117,7 @@ export class UsuarioService {
 
 
         this.router.navigate(['/usuarios']);
-        Swal.fire('Error al editar', e.error.mensaje, 'error');
+        Swal.fire('Error al insertar datos', "El correo no es del dominio correcto (unam.mx), los pumapuntos exceden los limites permitidos (0-500) o hay datos incorrectos (datos repetidos o sin llenar)", 'error');
         return throwError( () => e );
       })
     );
