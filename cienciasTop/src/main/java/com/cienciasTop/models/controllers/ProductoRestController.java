@@ -126,19 +126,28 @@ public class ProductoRestController {
 		return new ResponseEntity<Map<String, Object>>(response,HttpStatus.OK);
 	}
 
-	@GetMapping("rentar/producto/{idP}/usuario/{idU}")
+	@GetMapping("productos/rentar/{idP}/usuario/{idU}")
 	public ResponseEntity<?> rentProduct(@PathVariable Long idP, @PathVariable Long idU  ) {
 		Producto producto = this.productoService.findById(idP);
 		Usuario usuario  =  usuarioService.findById(idU);
 		Map<String, Object> response = new HashMap<>();
 		if (producto.getStock()>= 1 ) {
 			if (usuario.getPumaPuntos() >= producto.getPrecio() ) {
-				//TODO:productosRentadosPorDi... si es mayor o iual a 3 no se puede rentar
-				usuario.setPumaPuntos(usuario.getPumaPuntos() - producto.getPrecio());
-				producto.setStock(producto.getStock()-1);
-				productoService.save(producto);
-				usuarioService.save(usuario);
-
+				if(usuario.getProductosRentadosTotales()<3){
+				// TODO:productosRentadosPorDi... si es mayor o iual a 3 no se puede rentar
+					try {
+					usuario.setPumaPuntos(usuario.getPumaPuntos() + (Integer)(producto.getPrecio()/2));
+					producto.setStock(producto.getStock()-1);
+					productoService.save(producto);
+					usuarioService.save(usuario);
+					} catch (Exception e) {
+						System.out.print(e.getLocalizedMessage());
+					}
+					
+				}else{
+					response.put("mensaje", "Ya has rentado 3 productos");
+					return new ResponseEntity<Map<String, Object>>(response, HttpStatus.BAD_REQUEST);
+				}
 
 			}else {
 				response.put("mensaje", "No cuentas con los puntos necesarios para rentar este producto");

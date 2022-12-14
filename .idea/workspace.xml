@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8ac4c619-7872-4625-b97a-91b96ffa8060" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cienciasTop/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/3.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/4.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/index.pack.old" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,27 +41,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "com.google.cloudcode.ide_session_index": "20221114_0002",
+    "com.google.cloudcode.ide_session_index": "20221213_0001",
     "last_opened_file_path": "/home/mvg/Escritorio/6toSemestre/IngenieriaSoftware/CienciasTopProyecto",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/snap/intellij-idea-ultimate/386/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
+    "ts.external.directory.path": "/snap/intellij-idea-ultimate/386/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="CienciasTopProyecto" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="CienciasTopProyecto" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,6 +66,7 @@
       <workItem from="1668432486409" duration="683000" />
       <workItem from="1668456806500" duration="1279000" />
       <workItem from="1668473891114" duration="455000" />
+      <workItem from="1670941005224" duration="367000" />
     </task>
     <servers />
   </component>

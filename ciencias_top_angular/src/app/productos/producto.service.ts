@@ -9,6 +9,7 @@ import Swal from 'sweetalert2';
 
 import { Router } from '@angular/router';
 import { AuthService } from '../usuarios/auth.service';
+import { Usuario } from '../usuarios/usuario';
 
 @Injectable({
   providedIn: 'root'
@@ -97,6 +98,23 @@ export class ProductoService {
       })
     )
   }
+
+  rentar(idP): Observable<any>{
+    return this.http.get<Producto>(`${this.urlEndPoint}/rentar/${idP}/usuario/${this.authService.usuario.id}`, {headers: this.agregarAuthorizationHeader() }).pipe(
+      catchError(e => {
+
+        if(this.isNoAutorizado(e)){
+          return throwError( () => e );
+        }
+
+        
+        this.router.navigate(['/productos']);
+        Swal.fire('Error al rentar', e.error.mensaje, 'error');
+        return throwError( () => e );
+      })
+    )
+  }
+
 
   delete(id: number): Observable<Producto>{
     return this.http.delete<Producto>(`${this.urlEndPoint}/${id}`, {headers: this.agregarAuthorizationHeader()}).pipe(
