@@ -1,50 +1,63 @@
-<section style="background-color: #eee">
+<section>
   <div class="container py-5">
-    <div class="my-2 text-left">
-      <button class="btn btn-rounded btn-primary" type="button" [routerLink]="['/usuarios/form']">Añadir Usuario</button>
+    <div class="my-2 text-center">
+      <button class="btn botonFantasmaVerde text-white " type="button" [routerLink]="['/usuarios/form']">Añadir Usuario</button>
     </div>
     <div class="row">
       <div
-        class="col-md-6 col-lg-6 mb-4 mb-md-0"
+        class="col-md-6 col-lg-6 mb-4 mb-md-2"
         *ngFor="let usuario of usuarios">
         <div class="card">
-          <div class="d-flex justify-content-between p-3">
-            <p class="lead mb-0">{{ usuario.numeroDeCuenta }}</p>
-              <div class="bg-danger d-flex align-items-center justify-content-center shadow-1-strong"
-                style="width: 60px; height: 35px"
-              >
-                <p class="text-white mb-0 small" (click)="delete(usuario)">Eliminar</p>
-              </div>
-              <div class="bg-primary d-flex align-items-center justify-content-center shadow-1-strong" style="width: 60px; height: 35px">
-                <p class="text-white mb-0 small" [routerLink]="['/usuarios/form', usuario.id]">Editar</p>
-              </div>
-          </div>
           
-          <div class="card-body">
-            <div class="d-flex justify-content-between">
-              <p class="small"><a>Nombre:</a></p>
-              <p class="small text-danger">{{ usuario.nombre }}</p>
-            </div>
+          
+          <div class="card-body row"><!--{55-->
+          <div class ="col-6">
+		  <img
+		    src="https://media.istockphoto.com/id/1136395700/es/vector/icono-de-avatar-del-usuario-bot%C3%B3n-s%C3%ADmbolo-de-perfil-icono-de-persona-plana-para-stock.jpg?s=612x612&w=0&k=20&c=ZvwinzyLjzaG6QR5AK3pplpJv9qanny_eDp23HD-0pc="
+		    class="card-img-top"
+		    alt="Laptop"
+		  />
+          </div>
+          <div class ="card-body col-6 ">
+          
+          	    <div class="d-flex justify-content-between">
+		      <p class="small"><a>Numero De Cuenta:</a></p>
+		      <p class="small text-danger">{{ usuario.numeroDeCuenta }}</p>
+		    </div>
+		    <div class="d-flex justify-content-between">
+		      <p class="small"><a>Nombre:</a></p>
+		      <p class="small text-danger">{{ usuario.nombre }}</p>
+		    </div>
 
-            <div class="d-flex justify-content-between">
-              <p class="small"><a>Numero de Celular:</a></p>
-              <p class="small text-danger">{{ usuario.numeroDeCelular }}</p>
-            </div>
+		    <div class="d-flex justify-content-between">
+		      <p class="small"><a>Numero de Celular:</a></p>
+		      <p class="small text-danger">{{ usuario.numeroDeCelular }}</p>
+		    </div>
 
-              <div class="d-flex justify-content-between">
-                <p class="small"><a>Correo Electronico:</a></p>
-                <p class="small text-danger">{{ usuario.correoElectronico }}</p>
+		    <div class="d-flex justify-content-between">
+		      <p class="small"><a>Correo Electronico:</a></p>
+		      <p class="small text-danger">{{ usuario.correoElectronico }}</p>
+		    </div>
+
+		    <div class="d-flex justify-content-between">
+		      <p class="small"><a>Carrera:</a></p>
+		      <p class="small text-danger">{{ usuario.carrera }}</p>
+		    </div>
+	 </div>
+	 <div class="d-flex justify-content-between p-3"><!--{52-->
+          
+              <div class="botonFantasmaRojo d-flex align-items-center justify-content-center shadow-1-strong">
+                <p class="text-white mb-0 small " (click)="delete(usuario)">Eliminar</p>
               </div>
-
-                <div class="d-flex justify-content-between">
-                  <p class="small"><a>Carrera:</a></p>
-                  <p class="small text-danger">{{ usuario.carrera }}</p>
-                </div>
-
-
+              
+              <div class="botonFantasmaAzul d-flex align-items-center justify-content-center shadow-1-strong">
+                <p class="text-white mb-0 small " [routerLink]="['/usuarios/form', usuario.id]">Editar</p>
+              </div>
+              
+          </div><!--}42-->
 
             
-          </div>
+          </div><!--}14-->
         </div>
       </div>
     </div>

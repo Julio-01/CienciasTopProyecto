@@ -1,0 +1,25 @@
+.botonFantasmaVerde{
+  align-content: center;
+  background: #000000;
+  width: 400px;
+}
+
+.botonFantasmaVerde:hover{
+ background: #5BB318;
+ box-shadow: 0 0 10px #5BB318, 0 0 40px #5BB318, 0 0 80px #5BB318;
+}
+
+.formularioLogin{
+  left: 25px;
+  top: 25px;
+  width: 1000px;
+}
+
+.cabeceraLogin{
+ background: #4C0033;
+}
+
+.camposLogin{
+ padding: 10px;
+ align-content: center;
+}

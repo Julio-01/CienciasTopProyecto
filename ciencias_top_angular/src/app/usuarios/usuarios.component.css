@@ -1,0 +1,34 @@
+.botonFantasmaVerde{
+  align-content: center;
+  background: #000000;
+   width: 400px;
+  width: 1115px;
+}
+.botonFantasmaVerde:hover{
+ background: #5BB318;
+ box-shadow: 0 0 10px #5BB318, 0 0 40px #5BB318, 0 0 80px #5BB318;
+}
+.botonFantasmaRojo{
+  align-content: center;
+  background: #000000;
+  width: 400px;
+  height: 40px;
+}
+.botonFantasmaRojo:hover{
+ background: #DC3535;
+ box-shadow: 0 0 10px #DC3535, 0 0 40px #DC3535, 0 0 80px #DC3535;
+}
+.botonFantasmaAzul{
+  align-content: center;
+  background: #000000;
+  width: 400px;
+}
+.botonFantasmaAzul:hover{
+ background: #439A97;
+ box-shadow: 0 0 10px #439A97, 0 0 40px #439A97, 0 0 80px #439A97;
+}
+
+.cabeceraUsuario{
+ background: #4C0033;
+}
+

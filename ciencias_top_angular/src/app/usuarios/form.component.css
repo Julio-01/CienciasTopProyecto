@@ -1,0 +1,32 @@
+.cabeceraForm{
+ background: #4C0033;
+}
+.camposForm{
+padding: 5px;
+ align-content: center;
+}
+.formularioForm{
+  left: 25px;
+  top: 25px;
+  width: 1300px;
+}
+.botonFantasmaAzul{
+  align-content: center;
+  background: #000000;
+  width: 100px;
+}
+.botonFantasmaAzul:hover{
+ background: #439A97;
+ box-shadow: 0 0 10px #439A97, 0 0 40px #439A97, 0 0 80px #439A97;
+}
+
+.botonFantasmaVerde{
+  align-content: center;
+  background: #000000;
+  width: 100px;
+}
+
+.botonFantasmaVerde:hover{
+ background: #5BB318;
+ box-shadow: 0 0 10px #5BB318, 0 0 40px #5BB318, 0 0 80px #5BB318;
+}
