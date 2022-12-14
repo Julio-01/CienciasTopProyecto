@@ -1,0 +1,9 @@
+.botonFantasmaAzul{
+  align-content: center;
+  background: black;
+  width: 120px;
+}
+.botonFantasmaAzul:hover{
+ background: #439A97;
+ box-shadow: 0 0 5px #439A97, 0 0 5px #439A97, 0 0 5px #439A97;
+}

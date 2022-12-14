@@ -1,8 +1,6 @@
 <section style="background-color: #eee">
   <div class="container py-5">
-    <div class="my-2 text-left">
-      <button class="btn btn-rounded text-white" style="background-color: #0F96D3 ;" type="button" [routerLink]="['/productos/form']">Añadir Producto</button>
-    </div>
+
     <div class="row">
       <div
         class="col-md-6 col-lg-4 mb-4 mb-md-0"
@@ -10,14 +8,13 @@
         <div class="card">
           <div class="d-flex justify-content-between p-3">
             <p class="lead mb-0">{{ producto.nombre }}</p>            
-              <div class="d-flex align-items-center justify-content-center shadow-1-strong" style="width: 60px; height: 35px; background-color: #0F96D3;">
+            <div class="botonFantasmaAzul d-flex align-items-center justify-content-center shadow-1-strong">
                 <p class="text-white mb-0 small" [routerLink]="['/productos/form', producto.id]">Editar</p>
               </div>
-              <div class="d-flex align-items-center justify-content-center shadow-1-strong" style="width: 60px; height: 35px; background-color: #0F96D3;">
+              <div class="botonFantasmaAzul d-flex align-items-center justify-content-center shadow-1-strong">
                 <p class="text-white mb-0 small" [routerLink]="['/productos/ver', producto.id]">Ver</p>
               </div>
-              <div class="bg-danger d-flex align-items-center justify-content-center shadow-1-strong"
-                style="width: 60px; height: 35px">
+              <div class="botonFantasmaRojo d-flex align-items-center justify-content-center shadow-1-strong">
                 <p class="text-white mb-0 small" (click)="delete(producto)">Eliminar</p>
               </div>
           </div>

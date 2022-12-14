@@ -1,0 +1,43 @@
+.cabeceraForm{
+    background: #4C0033;
+   }
+   .camposForm{
+   padding: 5px;
+    align-content: center;
+   }
+   .formularioForm{
+     left: 25px;
+     top: 25px;
+     width: 1300px;
+   }
+   .botonFantasmaAzul{
+     align-content: center;
+     background: #7F669D;
+     width: 80px;
+   }
+   .botonFantasmaAzul:hover{
+    background: #439A97;
+    box-shadow: 0 0 5px #439A97, 0 0 5px #439A97, 0 0 5px #439A97;
+   }
+   
+   .botonFantasmaRojo{
+    align-content: center;
+    background: #d32828;
+    width: 80px;
+  }
+  .botonFantasmaRojo:hover{
+   background: #d32828;
+   box-shadow: 0 0 5px #d32828, 0 0 5px #d32828, 0 0 5px #d32828;
+  }
+
+   .botonFantasmaVerde{
+     align-content: center;
+     background: #7F669D;
+     width: 150px;
+   }
+   
+   .botonFantasmaVerde:hover{
+    background: #5BB318;
+    box-shadow: 0 0 5px #5BB318, 0 0 5px #5BB318, 0 0 5px #5BB318;
+   }
+   

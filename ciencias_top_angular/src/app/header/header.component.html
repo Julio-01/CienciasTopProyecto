@@ -8,10 +8,18 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a *ngIf="authService.isAdmin()" class="nav-link text-white botonFantasmaMorado" routerLinkActive="active" aria-current="page" routerLink="/usuarios">Usuarios</a>
+
+          <li *ngIf="authService.isAuthenticated()" class="dropdown">
+            <a class="btn botonFantasmaMorado text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+          
+            <ul class="dropdown-menu">
+              <li><button routerLink="/productos" class="dropdown-item">Ver Productos</button></li>
+              <li><button routerLink="/productos/form" class="dropdown-item">Añadir Producto</button></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white botonFantasmaMorado" routerLinkActive="active" aria-current="page" routerLink="/productos" >Productos</a>
-          </li>
+
         </ul>
         <ul class="navbar-nav navbar-right">
           <li>
