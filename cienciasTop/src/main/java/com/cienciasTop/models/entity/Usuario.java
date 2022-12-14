@@ -33,7 +33,7 @@ public class Usuario implements Serializable {
 	private String nombre;
 	@Column(name = "numeroDeCelular", nullable = false)
 	private String numeroDeCelular;
-	@Pattern(regexp="^[A-Za-z0-9._+%-]+@[A-Za-z0-9.-]+.unam.mx$")
+//	@Pattern(regexp="^[A-Za-z0-9._+%-]+@[A-Za-z0-9.-]+.unam.mx$")
 	@Column(name = "correoElectronico", unique = true, nullable = false)
 	private String correoElectronico;
 	@Column(name = "carrera", nullable = false)
