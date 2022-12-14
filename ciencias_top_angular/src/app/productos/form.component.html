@@ -1,4 +1,4 @@
-<div class="card text-white container my-2" style="background-color: #0C4065;">
+<div class="card text-white container my-2" style="background-color: #7F669D;">
     <div class="card-header">{{titulo}}</div>
     <div class="card-body">
 
@@ -43,7 +43,7 @@
 
             <div class="form-group row">
                 <div class="col-sm-6">
-                    <button class="btn text-white" style="background-color: #0F96D3;" role="button" (click)="create()" *ngIf="!producto.id else elseBlock">Añadir</button>                   
+                    <button class="botonFantasmaAzul btn d-flex align-items-center justify-content-center shadow-1-strong text-white" role="button" (click)="create()" *ngIf="!producto.id else elseBlock"> Añadir </button>                   
                     <ng-template #elseBlock>
                         <button class="btn btn-secondary" role="button" (click)="update()">Actualizar</button>                   
                     </ng-template>
