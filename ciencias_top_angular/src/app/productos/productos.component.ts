@@ -65,7 +65,7 @@ export class ProductosComponent implements OnInit {
       },
       buttonsStyling: false
     })
-    
+
     swalWithBootstrapButtons.fire({
       title: 'Estas seguro?',
       text: `¿Seguro que desea rentar el producto ${producto.nombre}?`,

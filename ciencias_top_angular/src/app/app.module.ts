@@ -14,15 +14,18 @@ import { UsuariosFormComponent } from './usuarios/form.component';
 import { FormsModule } from '@angular/forms';
 import { VerComponent } from './productos/ver.component';
 import { FormComponent } from './productos/form.component';
+import { DevolverComponent } from './productos/devolver.component';
 import { UsuarioPerfilComponent } from './usuarios/perfil.component';
 import { LoginComponent } from './usuarios/login.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 
 const routes: Routes = [
-  {path: '', redirectTo: '/productos', pathMatch: 'full'},
+  {path: '', redirectTo: '/inicio', pathMatch: 'full'},
   {path: 'productos', component: ProductosComponent},
   {path: 'productos/form', component: FormComponent},
   {path: 'productos/form/:id', component: FormComponent},
+  {path: 'productos/devolver/:id', component: DevolverComponent},
   {path: 'productos/ver', component: VerComponent},
   {path: 'productos/ver/:id', component: VerComponent},
   {path: 'login', component: LoginComponent},
@@ -30,7 +33,7 @@ const routes: Routes = [
   {path: 'usuarios/form', component: UsuariosFormComponent},
   {path: 'usuarios/form/:id', component: UsuariosFormComponent},
   {path: 'usuarios/perfil', component: UsuarioPerfilComponent},
-
+  {path: 'inicio', component:InicioComponent}
 ];
 
 
@@ -40,6 +43,7 @@ const routes: Routes = [
     HeaderComponent,
     FooterComponent,
     ProductosComponent,
+    DevolverComponent,
     // ProductosFormComponent,
     FormComponent,
     LoginComponent,
@@ -47,6 +51,7 @@ const routes: Routes = [
     VerComponent,
     UsuariosFormComponent,
     UsuarioPerfilComponent,
+    InicioComponent,
   ],
   imports: [
     BrowserModule,

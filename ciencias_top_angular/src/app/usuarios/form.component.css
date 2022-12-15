@@ -12,12 +12,12 @@ padding: 5px;
 }
 .botonFantasmaAzul{
   align-content: center;
-  background: #000000;
+  background: #7F669D;
   width: 100px;
 }
 .botonFantasmaAzul:hover{
  background: #439A97;
- box-shadow: 0 0 10px #439A97, 0 0 40px #439A97, 0 0 80px #439A97;
+ box-shadow: 0 0 5px #439A97, 0 0 5px #439A97, 0 0 5px #439A97;
 }
 
 .botonFantasmaVerde{
@@ -28,5 +28,5 @@ padding: 5px;
 
 .botonFantasmaVerde:hover{
  background: #5BB318;
- box-shadow: 0 0 10px #5BB318, 0 0 40px #5BB318, 0 0 80px #5BB318;
+ box-shadow: 0 0 5px #5BB318, 0 0 5px #5BB318, 0 0 5px #5BB318;
 }

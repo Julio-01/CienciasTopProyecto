@@ -9,7 +9,7 @@ export class Usuario {
     carrera:string;
     //password
     contrasena:string;
-    pumaPuntos:number;
+    pumaPuntos:number = 100;
     enabled: boolean;
     roles:string[]=[]
 

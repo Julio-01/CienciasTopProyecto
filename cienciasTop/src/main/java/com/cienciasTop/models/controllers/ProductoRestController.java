@@ -167,7 +167,14 @@ public class ProductoRestController {
 					// RentarProducto rentarProducto = new RentarProducto();
 				// TODO:productosRentadosPorDi... si es mayor o iual a 3 no se puede rentar
 					RentarProducto rentarP = new RentarProducto();
-					usuario.setPumaPuntos(usuario.getPumaPuntos() + (Integer)(producto.getPrecio()/2));					
+
+					int total = usuario.getPumaPuntos() + (Integer) (producto.getPrecio() / 2);
+
+					if (total > 500)
+						usuario.setPumaPuntos(500);
+					else
+						usuario.setPumaPuntos(total);
+
 					usuario.setProductosRentadosTotales(usuario.getProductosRentadosTotales()+1);
 					producto.setStock(producto.getStock()-1);
 					// TODO: ProductoRentado pr = new ProductoRentado(idU)
