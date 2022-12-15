@@ -9,6 +9,6 @@ import com.cienciasTop.models.entity.RentarProducto;
 
 public interface IRentarProductoDao extends CrudRepository<RentarProducto, Long>{
 
-    // public List<RentarProducto> findAllByInitialDate(String strDate);
+    public RentarProducto findByIdUsuarioAndIdProducto(long idUsuario, long idProducto);
     
 }

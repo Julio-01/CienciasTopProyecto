@@ -115,6 +115,22 @@ export class ProductoService {
     )
   }
 
+  devolver(idP): Observable<any>{
+    return this.http.get<Producto>(`${this.urlEndPoint}/devolver/${idP}/usuario/${this.authService.usuario.id}`, {headers: this.agregarAuthorizationHeader() }).pipe(
+      catchError(e => {
+
+        if(this.isNoAutorizado(e)){
+          return throwError( () => e );
+        }
+
+
+        this.router.navigate(['/productos']);
+        Swal.fire('Error al rentar', e.error.mensaje, 'error');
+        return throwError( () => e );
+      })
+    )
+  }
+
 
   delete(id: number): Observable<Producto>{
     return this.http.delete<Producto>(`${this.urlEndPoint}/${id}`, {headers: this.agregarAuthorizationHeader()}).pipe(

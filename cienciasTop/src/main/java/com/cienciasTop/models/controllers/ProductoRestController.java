@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Date;
+import java.util.Calendar;
 import java.text.SimpleDateFormat;
 import java.text.DateFormat;
 import java.time.LocalDate;
@@ -211,6 +212,16 @@ public class ProductoRestController {
 		Producto producto = this.productoService.findById(idP);
 		Usuario usuario  =  usuarioService.findById(idU);
 		Map<String, Object> response = new HashMap<>();
+
+		RentarProducto renta = this.findByIdUsuarioAndIdProducto(usuario.getId(), producto.getId());
+		Date date_final = new SimpleDateFormat("MM/dd/yyyy").parse(renta.getFecha_fianl());
+
+		Calendar today = Calendar.getInstance();
+		Calendar.set(Calendar.HOUR_OF_DAY, 23);
+		Calendar.set(Calendar.MINUTE, 59);
+		if (date_final < today)
+			usuario.setPumaPuntos(usuario.getPumaPuntos - 20);
+
 
 		response.put("usuario",usuario);
 		return new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);

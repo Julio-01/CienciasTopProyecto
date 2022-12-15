@@ -26,8 +26,13 @@ export class DevolverComponent implements OnInit {
   }
 
   public devolver():void{
-    this.router.navigate(['/productos'])
-    swal.fire('Producto Devuelto', `El producto con código ${this.codigoProducto} fue devuelto con éxito`, 'success')
+    this.productoService.devolver(this.codigoProducto).subscribe(
+      Response => {
+        this.router.navigate(['/productos']);
+        swal.fire('Producto Devuelto', `El producto con código ${this.codigoProducto} fue devuelto con éxito`, 'success');
+      }
+    )
+
   }
 
 

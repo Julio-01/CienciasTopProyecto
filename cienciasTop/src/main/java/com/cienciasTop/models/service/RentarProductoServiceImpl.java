@@ -25,11 +25,11 @@ public class RentarProductoServiceImpl implements IRentarProductoService{
 		return (List<RentarProducto>) rentarProductoDao.findAll();
 	}
 
-	// @Override
-	// @Transactional(readOnly=true)
-	// public List<RentarProducto> findAllByInitialDate(String strDate) {
-	// 	return rentarProductoDao.findAllByInitialDate(strDate);
-	// }
+	@Override
+	@Transactional(readOnly=true)
+	public RentarProducto findByUsuarioProducto(long idUsuario, long idProducto) {
+		return rentarProductoDao.findByIdUsuarioAndIdProducto(numeroCuenta, codigoProducto);
+	}
 
 
 	@Override

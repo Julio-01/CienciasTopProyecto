@@ -6,7 +6,7 @@ import com.cienciasTop.models.entity.RentarProducto;
 public interface IRentarProductoService {
     public List<RentarProducto> findAll();
 
-	// public List<RentarProducto> findAllByInitialDate(String strDate);
+	public RentarProducto findByUsuarioProducto(long idUsuario, long idProducto);
 	
 	public RentarProducto findById(Long id);
 	
