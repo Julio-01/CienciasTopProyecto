@@ -92,6 +92,30 @@ public class UsuarioRestController {
 		response.put("producto", usuarioNuevo);
 		return new ResponseEntity<Map<String, Object>>(response,HttpStatus.CREATED);
 	}
+
+
+	@Secured("ROLE_ADMIN")
+	@PutMapping("/usuarios/reportes")
+	public ResponseEntity<?> reportes() {
+		int activos, inactivos = 0;
+		try {
+			for(Usuario u : usuarioService.findAll()){
+				if(u.getEnabled())
+					activos++;
+				
+					inactivos++;
+
+			}
+			
+		} catch (Exception e) {
+			response.put("mensaje", "Error al cargar reporte");
+			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+
+
+		}
+	}
+
+
 	@Secured("ROLE_ADMIN")
 	@PutMapping("/usuarios/{id}")
 	public ResponseEntity<?> update(@RequestBody Usuario usuario, @PathVariable Long id) {
