@@ -62,6 +62,92 @@ public class UsuarioRestController {
 		
 		return new ResponseEntity<Usuario>(usuario, HttpStatus.OK);
 	}
+
+	//Búsquedas de usuarios
+	/** 
+	@Secured({"ROLE_ADMIN"})
+	@GetMapping("/usuarios/{correoElectronico}")
+	public ResponseEntity<?> buscarUsuarioCorreo(@PathVariable(value="correoElectronico") String correoElectronico){
+		Usuario usuario= null;
+		String mensajeError="";
+		Map<String, Object> response = new HashMap<>();
+		try{
+			usuario = usuarioService.findByCorreoElectronico(correoElectronico);
+		}catch(DataAccessException e){
+			mensajeError = "Error al realizar la consulta en la base de datos";
+			response.put("mensaje", mensajeError);
+			mensajeError = "";
+			mensajeError += e.getMessage() + ": " + e.getMostSpecificCause().getMessage();
+			response.put("Error: ", mensajeError);
+			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+        if (usuario == null) {
+            mensajeError = "El usuario " + correoElectronico + " no fue encontrado";
+			response.put("mensaje", mensajeError);
+            return new ResponseEntity<Map<String, Object>>(response,HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<Usuario>(usuario, HttpStatus.OK);
+    }
+	*/
+
+	/** 
+	@Secured({"ROLE_ADMIN"})
+	@RequestMapping("/usuarios/{nombre}")
+	public ResponseEntity<?> buscarUsuarioNombre(@PathVariable(value="nombre") String nombre) {
+		List<Usuario> usuarios;
+		String mensajeError="";
+		Map<String, Object> response = new HashMap<>();
+		try{
+			usuarios = usuarioService.findByNombre(nombre);
+		}catch(DataAccessException e){
+			mensajeError = "Error al realizar la consulta en la base de datos";
+			response.put("mensaje", mensajeError);
+			mensajeError = "";
+			mensajeError += e.getMessage() + ": ";
+			mensajeError += e.getMostSpecificCause().getMessage();
+			response.put("Error: ", mensajeError);
+			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+
+		if (usuarios == null) {
+			usuarios = new ArrayList<Usuario>();
+		}
+
+		if (!usuarios.isEmpty()) {
+			return new ResponseEntity<List<Usuario>>(usuarios, HttpStatus.OK);
+		}
+		mensajeError = "El usuario " + nombre + " no fue encontrado";
+		response.put("mensaje", mensajeError);
+		return new ResponseEntity<Map<String, Object>>(response, HttpStatus.NOT_FOUND);
+	}
+	*/
+	
+	/** 
+	@Secured({"ROLE_ADMIN"})
+	//@RequestMapping(value = "/usuarios/{numeroDeCuenta}", method = RequestMethod.GET)
+	public ResponseEntity<?> buscarUsuarioNumeroDeCuenta(@PathVariable("numeroDeCuenta") String numeroDeCuenta) {
+		Usuario usuario= null;
+		String mensajeError="";
+		Map<String, Object> response = new HashMap<>();
+		try{
+			usuario = usuarioService.findByNumeroDeCuenta(numeroDeCuenta);
+		}catch(DataAccessException e){
+			mensajeError = "Error al realizar la consulta en la base de datos";
+			response.put("mensaje", mensajeError);
+			mensajeError = "";
+			mensajeError += e.getMessage() + ": " + e.getMostSpecificCause().getMessage();
+			response.put("Error: ", mensajeError);
+			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+        if (usuario == null) {
+            mensajeError = "El usuario " + numeroDeCuenta + " no ha sido encontrado";
+			response.put("mensaje", mensajeError);
+            return new ResponseEntity<Map<String, Object>>(response, HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<Usuario>(usuario, HttpStatus.OK);
+    }
+	*/
+
 	@Secured("ROLE_ADMIN")
 	@PostMapping("/usuarios")
 	public ResponseEntity<?> create(@RequestBody Usuario usuario) {
