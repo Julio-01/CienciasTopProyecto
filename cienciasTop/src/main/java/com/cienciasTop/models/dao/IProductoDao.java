@@ -9,4 +9,10 @@ public interface IProductoDao extends CrudRepository<Producto,Long>{
     @Query(
 			value= "SELECT nombre FROM productos ORDER BY precio asc LIMIT 5", 
 			nativeQuery = true)
+
+    
+    @Query(
+        value= "SELECT nombre FROM productos ORDER BY precio des LIMIT 5", 
+			nativeQuery = true)
+    )
 }

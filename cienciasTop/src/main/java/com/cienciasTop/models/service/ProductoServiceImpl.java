@@ -50,4 +50,11 @@ public class ProductoServiceImpl implements IProductoService{
 		return productoDao.masBaratos();
 	}
 
+
+	@Override
+	@Transactional(readOnly=true)
+	public List<Producto> masCaros() {
+		return productoDao.masCaros();
+	}
+
 }
