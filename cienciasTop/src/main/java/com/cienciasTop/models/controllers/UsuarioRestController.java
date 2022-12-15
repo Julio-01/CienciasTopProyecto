@@ -96,14 +96,14 @@ public class UsuarioRestController {
 
 	@Secured("ROLE_ADMIN")
 	@PutMapping("/usuarios/reportes")
-	public ResponseEntity<?> reportes() {
-		int activos, inactivos = 0;
+	public ResponseEntity<?> cuentasInactivas() {
+		int  inactivos = 0;
 		try {
 			for(Usuario u : usuarioService.findAll()){
-				if(u.getEnabled())
-					activos++;
-				
+				if(!u.getEnabled())
 					inactivos++;
+				
+				
 
 			}
 			
