@@ -1,4 +1,4 @@
-<section style="background-color: #eee">
+<section style="background-color: #FEFCF3">
   <div class="container py-5">
 
     <div class="row">
@@ -48,13 +48,11 @@
             </div>
 
           <div class="d-flex justify-content-between p-3">
-            <div class="d-flex align-items-center justify-content-center"
-              style="width: 60px; height: 35px; background-color: #0F96D3;">
+            <div class="botonFantasmaAzul d-flex align-items-center justify-content-center shadow-1-strong">
               <p class="text-white mb-0 small" (click)="rentar(producto)">Rentar</p>
             </div>
 
-            <div class="d-flex align-items-center justify-content-center"
-              style="width: 60px; height: 35px; background-color: #a83232;">
+            <div class="botonFantasmaRojo d-flex align-items-center justify-content-center shadow-1-strong">
               <p class="text-white mb-0 small" [routerLink]="['/productos/devolver', producto.id]">Devolver</p>
             </div>
           </div>

@@ -1,107 +1,109 @@
-<div class="card formularioForm " style="background-color: #FFE6F7" >
-    <div class="card-header cabeceraForm text-white">{{titulo}}</div>
-    <div class="card-body">
+<section style="background-color: #FEFCF3; height: 800px;">
+    <div class="card formularioForm " style="background-color: #FFE6F7" >
+        <div class="card-header cabeceraForm text-white">{{titulo}}</div>
+        <div class="card-body">
 
-        <form class = "row">
-        
+            <form class = "row">
             
+                
+                
             
-	    
-	    <div class = "col-6">
-	    <div class="form-group row camposForm">
-                <label for="" class="col-form-label col-sm-2">Nombre</label>
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" [(ngModel)]="usuario.nombre" name="nombre">
-                </div>
-            </div>
-
+            <div class = "col-6">
             <div class="form-group row camposForm">
-                <label for="" class="col-form-label col-sm-2">Numero de Cuenta</label>
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" [(ngModel)]="usuario.numeroDeCuenta" name="numeroDeCuenta">
+                    <label for="" class="col-form-label col-sm-2">Nombre</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" [(ngModel)]="usuario.nombre" name="nombre">
+                    </div>
                 </div>
-            </div>
 
+                <div class="form-group row camposForm">
+                    <label for="" class="col-form-label col-sm-2">Numero de Cuenta</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" [(ngModel)]="usuario.numeroDeCuenta" name="numeroDeCuenta">
+                    </div>
+                </div>
+
+                <div class="form-group row camposForm">
+                    <label for="" class="col-form-label col-sm-2">Numero de Celular</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" [(ngModel)]="usuario.numeroDeCelular" name="numeroDeCelular">
+                    </div>
+                </div>
+
+                <div class="form-group row camposForm">
+                    <label for="" class="col-form-label col-sm-2">Correo Electronico</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" [(ngModel)]="usuario.correoElectronico" name="correoElectronico">
+                    </div>
+                </div>
+
+                
+                
+            </div>
+            
+            
+            
+            <div class ="col-6">
             <div class="form-group row camposForm">
-                <label for="" class="col-form-label col-sm-2">Numero de Celular</label>
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" [(ngModel)]="usuario.numeroDeCelular" name="numeroDeCelular">
+                    <label for="" class="col-form-label col-sm-2">Carrera</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" [(ngModel)]="usuario.carrera" name="carrera">
+                    </div>
                 </div>
-            </div>
 
-            <div class="form-group row camposForm">
-                <label for="" class="col-form-label col-sm-2">Correo Electronico</label>
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" [(ngModel)]="usuario.correoElectronico" name="correoElectronico">
+                
+
+                <div class="form-group row camposForm" *ngIf="nuevo">
+                    <label for="" class="col-form-label col-sm-2">Contraseña</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" [(ngModel)]="usuario.contrasena" name="contrasena">
+                    </div>
                 </div>
-            </div>
-
-            
-            
-	    </div>
-	    
-	    
-	    
-	    <div class ="col-6">
-	    <div class="form-group row camposForm">
-                <label for="" class="col-form-label col-sm-2">Carrera</label>
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" [(ngModel)]="usuario.carrera" name="carrera">
+                
+                <div class="form-group row camposForm">
+                    <label for="" class="col-form-label col-sm-2">Roles</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" [(ngModel)]="usuario.roles" name="roles">
+                    </div>
                 </div>
-            </div>
 
-            
-
-            <div class="form-group row camposForm" *ngIf="nuevo">
-                <label for="" class="col-form-label col-sm-2">Contraseña</label>
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" [(ngModel)]="usuario.contrasena" name="contrasena">
+                <div class="form-group row camposForm">
+                    <label for="" class="col-form-label col-sm-2">Enabled</label>
+                    <div class="col-sm-6 form-check">
+                        <input type="checkbox" class="form-check-input" [(ngModel)]="usuario.enabled" name="enabled">
+                    </div>
                 </div>
-            </div>
-            
-            <div class="form-group row camposForm">
-                <label for="" class="col-form-label col-sm-2">Roles</label>
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" [(ngModel)]="usuario.roles" name="roles">
+
+                <p>Puma Puntos actuales: {{ usuario.pumaPuntos }}</p>
+
+                <div class="form-group row camposForm">
+                    <label for="" class="col-form-label col-sm-2">Acumular Puma Puntos</label>
+                    <div class="col-sm-6">
+                        <input type="number" class="form-control" [(ngModel)]="nuevosPumaPuntos" name="nuevosPumaPuntos" disabled="{{nuevo}}" max="{{maxPumaPuntos}}">
+                    </div>
                 </div>
-            </div>
+                
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <button class="btn botonFantasmaVerde text-white" role="button" (click)="create()" *ngIf="!usuario.id else elseBlock">Añadir</button>                   
+                        <ng-template #elseBlock>
+                            <button class="btn botonFantasmaAzul text-white" role="button" (click)="update()">Actualizar</button>                   
+                        </ng-template>
 
-            <div class="form-group row camposForm">
-                <label for="" class="col-form-label col-sm-2">Enabled</label>
-                <div class="col-sm-6 form-check">
-                    <input type="checkbox" class="form-check-input" [(ngModel)]="usuario.enabled" name="enabled">
-                </div>
-            </div>
 
-            <p>Puma Puntos actuales: {{ usuario.pumaPuntos }}</p>
 
-            <div class="form-group row camposForm">
-                <label for="" class="col-form-label col-sm-2">Acumular Puma Puntos</label>
-                <div class="col-sm-6">
-                    <input type="number" class="form-control" [(ngModel)]="nuevosPumaPuntos" name="nuevosPumaPuntos" disabled="{{nuevo}}" max="{{maxPumaPuntos}}">
+                    </div>
                 </div>
             </div>
             
-            <div class="form-group row">
-                <div class="col-sm-6">
-                    <button class="btn botonFantasmaVerde text-white" role="button" (click)="create()" *ngIf="!usuario.id else elseBlock">Añadir</button>                   
-                    <ng-template #elseBlock>
-                        <button class="btn botonFantasmaAzul text-white" role="button" (click)="update()">Actualizar</button>                   
-                    </ng-template>
-
-
-
-                </div>
-            </div>
-	    </div>
-	    
-	    
-
-
-
             
-        </form>
+
+
+
+                
+            </form>
+
+        </div>
 
     </div>
-
-</div>
+</section>

@@ -1,10 +1,15 @@
 .botonFantasmaAzul{
     align-content: center;
-    background: black;
+    background: #7F669D;
     width: 80px;
   }
-  .botonFantasmaAzul:hover{
+.botonFantasmaAzul:hover{
    background: #439A97;
    box-shadow: 0 0 5px #439A97, 0 0 5px #439A97, 0 0 5px #439A97;
   }
   
+.formularioForm{
+    left: 25px;
+    top: 25px;
+    width: 1300px;
+}

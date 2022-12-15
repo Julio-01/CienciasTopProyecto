@@ -17,10 +17,11 @@ import { FormComponent } from './productos/form.component';
 import { DevolverComponent } from './productos/devolver.component';
 import { UsuarioPerfilComponent } from './usuarios/perfil.component';
 import { LoginComponent } from './usuarios/login.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 
 const routes: Routes = [
-  {path: '', redirectTo: '/productos', pathMatch: 'full'},
+  {path: '', redirectTo: '/inicio', pathMatch: 'full'},
   {path: 'productos', component: ProductosComponent},
   {path: 'productos/form', component: FormComponent},
   {path: 'productos/form/:id', component: FormComponent},
@@ -32,7 +33,7 @@ const routes: Routes = [
   {path: 'usuarios/form', component: UsuariosFormComponent},
   {path: 'usuarios/form/:id', component: UsuariosFormComponent},
   {path: 'usuarios/perfil', component: UsuarioPerfilComponent},
-
+  {path: 'inicio', component:InicioComponent}
 ];
 
 
@@ -50,6 +51,7 @@ const routes: Routes = [
     VerComponent,
     UsuariosFormComponent,
     UsuarioPerfilComponent,
+    InicioComponent,
   ],
   imports: [
     BrowserModule,
