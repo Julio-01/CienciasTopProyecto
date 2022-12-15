@@ -155,9 +155,9 @@ public class ProductoRestController {
 					System.err.println("usuario.getId() "+usuario.getId() );
 					if(rentarProducto.getIdUsuario()==usuario.getId() )
 						System.out.println("userId el iual");
-					if("12/15/2022".equals("12/15/2022"))
+					if(rentarProducto.getFecha_inicio().trim()==strDate.trim())
 						System.out.println("date el iual");
-					if(rentarProducto.getIdUsuario()==usuario.getId() && "12/15/2022"==strDate){
+					if(rentarProducto.getIdUsuario()==usuario.getId() && rentarProducto.getFecha_inicio().equals(strDate)){
 						i = i+1;
 						System.out.println(i+"Productos rentados anteriormente");
 					}
