@@ -1,8 +1,13 @@
 package com.cienciasTop.models.controllers;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.text.DateFormat;
+import java.time.LocalDate;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
@@ -21,8 +26,10 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cienciasTop.models.entity.Producto;
+import com.cienciasTop.models.entity.RentarProducto;
 import com.cienciasTop.models.entity.Usuario;
 import com.cienciasTop.models.service.IProductoService;
+import com.cienciasTop.models.service.IRentarProductoService;
 import com.cienciasTop.models.service.IUsuarioService;
 @CrossOrigin(origins= {"http://localhost:4200"})
 @RestController
@@ -32,6 +39,8 @@ public class ProductoRestController {
 	private IProductoService productoService;
 	@Autowired
 	private IUsuarioService usuarioService;
+	@Autowired
+	private IRentarProductoService rentarProductoService;
 	@GetMapping("/productos")
 	public List<Producto> index(){
 		 return productoService.findAll();
@@ -133,17 +142,44 @@ public class ProductoRestController {
 		Map<String, Object> response = new HashMap<>();
 		if (producto.getStock()>= 1 ) {
 			if (usuario.getPumaPuntos() >= producto.getPrecio() ) {
-				if(usuario.getProductosRentadosTotales()<3){
+				Date date = new Date();  
+				SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");  
+				String strDate = formatter.format(date);  
+				System.out.println("Date Format with MM/dd/yyyy : "+strDate);  
+				List<RentarProducto> listProductosRentado = rentarProductoService.findAll();
+				int i = 0;
+				for(RentarProducto rentarProducto: listProductosRentado ){
+					System.out.print(rentarProducto.toString()+"\n");
+					System.out.println(rentarProducto.getFecha_inicio());
+					System.out.println(strDate);
+					System.err.println("usuario.getId() "+usuario.getId() );
+					if(rentarProducto.getIdUsuario()==usuario.getId() )
+						System.out.println("userId el iual");
+					if("12/15/2022".equals("12/15/2022"))
+						System.out.println("date el iual");
+					if(rentarProducto.getIdUsuario()==usuario.getId() && "12/15/2022"==strDate){
+						i = i+1;
+						System.out.println(i+"Productos rentados anteriormente");
+					}
+				}
+				if(i<3){
+				// if(usuario.getProductosRentadosTotales()<3){
+					// RentarProducto rentarProducto = new RentarProducto();
 				// TODO:productosRentadosPorDi... si es mayor o iual a 3 no se puede rentar
-					try {
-					usuario.setPumaPuntos(usuario.getPumaPuntos() + (Integer)(producto.getPrecio()/2));
+					RentarProducto rentarP = new RentarProducto();
+					usuario.setPumaPuntos(usuario.getPumaPuntos() + (Integer)(producto.getPrecio()/2));					
+					usuario.setProductosRentadosTotales(usuario.getProductosRentadosTotales()+1);
 					producto.setStock(producto.getStock()-1);
+					// TODO: ProductoRentado pr = new ProductoRentado(idU)
+					// TODO: productoRentdoService.save(pr)
+					rentarP.setIdProducto(producto.getId());
+					rentarP.setIdUsuario(usuario.getId());
+					rentarP.setFecha_inicio(strDate);
+					rentarP.setFecha_fianl("");
+					rentarProductoService.save(rentarP);
 					productoService.save(producto);
 					usuarioService.save(usuario);
-					} catch (Exception e) {
-						System.out.print(e.getLocalizedMessage());
-					}
-					
+					System.out.println(rentarP.getIdProducto());
 				}else{
 					response.put("mensaje", "Ya has rentado 3 productos");
 					return new ResponseEntity<Map<String, Object>>(response, HttpStatus.BAD_REQUEST);
