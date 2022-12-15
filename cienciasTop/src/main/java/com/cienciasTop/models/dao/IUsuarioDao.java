@@ -8,4 +8,8 @@ public interface IUsuarioDao extends CrudRepository<Usuario, Long>{
 	
 	public Usuario findByNumeroDeCuenta(String numeroDeCuenta);
 
+	//public Usuario findByNombre(String nombre);
+
+	//public Usuario findByCorreoElectronico(String correoElectronico);
+
 }
