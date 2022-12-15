@@ -32,4 +32,6 @@ public class RoleServiceImpl implements IRoleService {
 	public Role findByNombre(String nombre) {
 		return roleDao.findByNombre(nombre);
 	}
+
+
 }

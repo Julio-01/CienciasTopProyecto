@@ -44,6 +44,10 @@ public class ProductoServiceImpl implements IProductoService{
 		
 	}
 
-	
+	@Override
+	@Transactional(readOnly=true)
+	public List<Producto> masBaratos() {
+		return productoDao.masBaratos();
+	}
 
 }

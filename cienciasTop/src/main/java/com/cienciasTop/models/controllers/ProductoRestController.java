@@ -169,4 +169,19 @@ public class ProductoRestController {
 		return new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);
 	}
 
+	@Secured({"ROLE_ADMIN","ROL_PROV"})
+	@GetMapping("/productos/masBaratos")
+	public ResponseEntity<?> masBaratos() {	
+		
+		try {
+			List<Producto> masBaratos = productoService.masBaratos();
+
+		} catch (Exception e) {
+			response.put("mensaje", "Error al intentar hacer la consulta");
+			response.put("error",e.getMessage().concat(": ").concat(e.getMostSpecificCause().getMessage()));
+			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+
+	}
+
 }
