@@ -136,10 +136,16 @@ public class ProductoRestController {
 				if(usuario.getProductosRentadosTotales()<3){
 				// TODO:productosRentadosPorDi... si es mayor o iual a 3 no se puede rentar
 					try {
-					usuario.setPumaPuntos(usuario.getPumaPuntos() + (Integer)(producto.getPrecio()/2));
-					producto.setStock(producto.getStock()-1);
-					productoService.save(producto);
-					usuarioService.save(usuario);
+						int total = usuario.getPumaPuntos() + (Integer) (producto.getPrecio() / 2);
+
+						if (total > 500)
+							usuario.setPumaPuntos(500);
+						else
+							usuario.setPumaPuntos(total);
+
+						producto.setStock(producto.getStock()-1);
+						productoService.save(producto);
+						usuarioService.save(usuario);
 					} catch (Exception e) {
 						System.out.print(e.getLocalizedMessage());
 					}

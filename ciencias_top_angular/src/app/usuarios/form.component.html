@@ -52,7 +52,7 @@
 
             
 
-            <div class="form-group row camposForm">
+            <div class="form-group row camposForm" *ngIf="nuevo">
                 <label for="" class="col-form-label col-sm-2">Contraseña</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control" [(ngModel)]="usuario.contrasena" name="contrasena">
@@ -73,11 +73,12 @@
                 </div>
             </div>
 
+            <p>Puma Puntos actuales: {{ usuario.pumaPuntos }}</p>
 
             <div class="form-group row camposForm">
-                <label for="" class="col-form-label col-sm-2">Puma Puntos</label>
+                <label for="" class="col-form-label col-sm-2">Acumular Puma Puntos</label>
                 <div class="col-sm-6">
-                    <input type="number" class="form-control" [(ngModel)]="usuario.pumaPuntos" name="pumaPuntos">
+                    <input type="number" class="form-control" [(ngModel)]="nuevosPumaPuntos" name="nuevosPumaPuntos" disabled="{{nuevo}}" max="{{maxPumaPuntos}}">
                 </div>
             </div>
             

@@ -14,6 +14,7 @@ import { UsuariosFormComponent } from './usuarios/form.component';
 import { FormsModule } from '@angular/forms';
 import { VerComponent } from './productos/ver.component';
 import { FormComponent } from './productos/form.component';
+import { DevolverComponent } from './productos/devolver.component';
 import { UsuarioPerfilComponent } from './usuarios/perfil.component';
 import { LoginComponent } from './usuarios/login.component';
 
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path: 'productos', component: ProductosComponent},
   {path: 'productos/form', component: FormComponent},
   {path: 'productos/form/:id', component: FormComponent},
+  {path: 'productos/devolver/:id', component: DevolverComponent},
   {path: 'productos/ver', component: VerComponent},
   {path: 'productos/ver/:id', component: VerComponent},
   {path: 'login', component: LoginComponent},
@@ -40,6 +42,7 @@ const routes: Routes = [
     HeaderComponent,
     FooterComponent,
     ProductosComponent,
+    DevolverComponent,
     // ProductosFormComponent,
     FormComponent,
     LoginComponent,

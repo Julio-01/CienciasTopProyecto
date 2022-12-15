@@ -14,6 +14,9 @@ export class UsuariosFormComponent implements OnInit {
 
   titulo: string = "Añadir Usuario"
   usuario: Usuario = new Usuario()
+  nuevo: boolean = true
+  nuevosPumaPuntos: number = 0;
+  maxPumaPuntos: number = 0;
 
   constructor(private usuarioService: UsuarioService, private router: Router, private activateRoute: ActivatedRoute) { }
 
@@ -25,15 +28,23 @@ export class UsuariosFormComponent implements OnInit {
     this.activateRoute.params.subscribe(params => {
       let id = params['id']
       if(id){
+        this.nuevo = false;
+        this.titulo = "Editar Usuario"
         this.usuarioService.getUsuario(id).subscribe((usuario)=> {
           this.usuario = usuario;
           this.usuario.roles = ((this.usuario.roles.map(r => r["nombre"]).join(", ") as unknown) as string[])
+          this.maxPumaPuntos = 500 - usuario.pumaPuntos;
         })
+      } else {
+        this.nuevo = true;
+        this.nuevosPumaPuntos = 100;
+        this.maxPumaPuntos = 100;
       }
     })
   }
 
   public create():void{
+    this.usuario.pumaPuntos = 100;
     this.usuario.roles = [(({nombre: this.usuario.roles} as unknown) as string)];
     this.usuarioService.create(this.usuario).subscribe(usuario =>
       {
@@ -44,6 +55,7 @@ export class UsuariosFormComponent implements OnInit {
   }
 
   public update():void{
+    this.usuario.pumaPuntos = this.usuario.pumaPuntos + this.nuevosPumaPuntos;
     this.usuario.roles = [(({nombre: this.usuario.roles} as unknown) as string)];
     this.usuarioService.update(this.usuario).subscribe(usuario => 
       {

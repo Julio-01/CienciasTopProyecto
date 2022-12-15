@@ -47,10 +47,17 @@
               </div>
             </div>
 
+          <div class="d-flex justify-content-between p-3">
             <div class="d-flex align-items-center justify-content-center"
               style="width: 60px; height: 35px; background-color: #0F96D3;">
               <p class="text-white mb-0 small" (click)="rentar(producto)">Rentar</p>
             </div>
+
+            <div class="d-flex align-items-center justify-content-center"
+              style="width: 60px; height: 35px; background-color: #a83232;">
+              <p class="text-white mb-0 small" [routerLink]="['/productos/devolver', producto.id]">Devolver</p>
+            </div>
+          </div>
 
           </div>
         </div>
