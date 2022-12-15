@@ -82,6 +82,7 @@ public class UsuarioRestController {
 		}
 
 		try {
+			usuario.setProductosRentadosTotales(0);
 			usuarioNuevo = usuarioService.save(usuario);
 		}catch(DataAccessException e) {
 			response.put("mensaje", "Error al realizar el insert en la base de datos.");
