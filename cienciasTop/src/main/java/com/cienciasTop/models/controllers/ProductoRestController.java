@@ -206,4 +206,14 @@ public class ProductoRestController {
 		return new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);
 	}
 
+	@GetMapping("productos/devolver/{idP}/usuario/{idU}")
+	public ResponseEntity<?> devolverProduct(@PathVariable Long idP, @PathVariable Long idU  ) {
+		Producto producto = this.productoService.findById(idP);
+		Usuario usuario  =  usuarioService.findById(idU);
+		Map<String, Object> response = new HashMap<>();
+
+		response.put("usuario",usuario);
+		return new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);
+	}
+
 }
