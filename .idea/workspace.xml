@@ -5,11 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ac4c619-7872-4625-b97a-91b96ffa8060" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/ProductoRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/ProductoRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/META-INF/maven/com.cienciasTop/cienciasTop/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/META-INF/maven/com.cienciasTop/cienciasTop/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/com/cienciasTop/CienciasTopApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/com/cienciasTop/models/auth/AuthorizationServerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/com/cienciasTop/models/auth/InfoAdicionalToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/com/cienciasTop/models/auth/JwtConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/com/cienciasTop/models/auth/ResourceServerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/com/cienciasTop/models/auth/SpringSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/com/cienciasTop/models/controllers/ProductoRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/com/cienciasTop/models/controllers/UsuarioRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/com/cienciasTop/models/dao/IProductoDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/com/cienciasTop/models/dao/IRoleDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/com/cienciasTop/models/dao/IUsuarioDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/com/cienciasTop/models/entity/Producto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/com/cienciasTop/models/entity/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/com/cienciasTop/models/entity/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/com/cienciasTop/models/service/IProductoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/com/cienciasTop/models/service/IRoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/com/cienciasTop/models/service/IUsuarioService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/com/cienciasTop/models/service/ProductoServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/com/cienciasTop/models/service/RoleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/com/cienciasTop/models/service/UsuarioService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/classes/import.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/controllers/target/test-classes/com/cienciasTop/CienciasTopApplicationTests.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/entity/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/cienciasTop/src/main/java/com/cienciasTop/models/entity/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/0.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/1.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/3.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/4.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cienciasTop/src/main/resources/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/cienciasTop/src/main/resources/import.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/index.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/ciencias_top_angular/.angular/cache/14.2.7/angular-webpack/74eb2f15b6cb9e4930077f79b3688139966200ab/index.pack.old" afterDir="false" />
     </list>
@@ -35,21 +61,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.google.cloudcode.ide_session_index&quot;: &quot;20221213_0001&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/mvg/Escritorio/6toSemestre/IngenieriaSoftware/CienciasTopProyecto&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/snap/intellij-idea-ultimate/386/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.google.cloudcode.ide_session_index": "20221215_0001",
+    "last_opened_file_path": "/home/mvg/Escritorio/6toSemestre/IngenieriaSoftware/CienciasTopProyecto",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "/home/mvg/Escritorio/6toSemestre/IngenieriaSoftware/CienciasTopProyecto/ciencias_top_angular/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -66,6 +93,8 @@
       <workItem from="1668456806500" duration="1279000" />
       <workItem from="1668473891114" duration="455000" />
       <workItem from="1670941005224" duration="367000" />
+      <workItem from="1671052449455" duration="292000" />
+      <workItem from="1671091512695" duration="3068000" />
     </task>
     <servers />
   </component>
@@ -83,7 +112,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>

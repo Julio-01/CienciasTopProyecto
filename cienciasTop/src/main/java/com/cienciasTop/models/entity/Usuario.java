@@ -33,7 +33,7 @@ public class Usuario implements Serializable {
 	private String nombre;
 	@Column(name = "numeroDeCelular", nullable = false)
 	private String numeroDeCelular;
-//	@Pattern(regexp="^[A-Za-z0-9._+%-]+@[A-Za-z0-9.-]+.unam.mx$")
+	// @Pattern(regexp="^[A-Za-z0-9._+%-]+@[A-Za-z0-9.-]+.unam.mx$", message = "El correo no es del dominio unam.mx")
 	@Column(name = "correoElectronico", unique = true, nullable = false)
 	private String correoElectronico;
 	@Column(name = "carrera", nullable = false)
@@ -46,13 +46,17 @@ public class Usuario implements Serializable {
 	private Integer pumaPuntos;
 	@Column(name = "enabled")
 	private Boolean enabled;
-	@Column(name = "productosRentadosTotales", nullable = false)
+	@Column(name = "productos_rentados_totales", nullable = false)
 	private Integer productosRentadosTotales;
-	// @Column(name = "productosRentados", nullable = false)
-	// private HashMap<Integer,ArrayList<Productos> > productosRentados;
+
+	@ManyToMany(fetch = FetchType.LAZY)
+	@JoinTable(name="usuarios_roles", joinColumns= @JoinColumn(name="usuario_id"),
+	inverseJoinColumns=@JoinColumn(name="role_id"),
+	uniqueConstraints= {@UniqueConstraint(columnNames= {"usuario_id", "role_id"})})
+	private List<Role> roles;
 
 
-
+	
 	public Integer getProductosRentadosTotales() {
 		return this.productosRentadosTotales;
 	}
@@ -61,19 +65,6 @@ public class Usuario implements Serializable {
 		this.productosRentadosTotales = productosRentadosTotales;
 	}
 
-	// public HashMap<Integer,ArrayList<Productos>> getProductosRentados() {
-	// 	return this.productosRentados;
-	// }
-
-	// public void setProductosRentados(HashMap<Integer,ArrayList<Productos>> productosRentados) {
-	// 	this.productosRentados = productosRentados;
-	// }
-
-	@ManyToMany(fetch = FetchType.LAZY)
-	@JoinTable(name="usuarios_roles", joinColumns= @JoinColumn(name="usuario_id"),
-	inverseJoinColumns=@JoinColumn(name="role_id"),
-	uniqueConstraints= {@UniqueConstraint(columnNames= {"usuario_id", "role_id"})})
-	private List<Role> roles;
 	
 	public Long getId() {
 		return id;
