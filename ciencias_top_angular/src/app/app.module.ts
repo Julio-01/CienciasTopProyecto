@@ -19,7 +19,6 @@ import { UsuarioPerfilComponent } from './usuarios/perfil.component';
 import { LoginComponent } from './usuarios/login.component';
 import { InicioComponent } from './inicio/inicio.component';
 
-
 const routes: Routes = [
   {path: '', redirectTo: '/inicio', pathMatch: 'full'},
   {path: 'productos', component: ProductosComponent},
@@ -33,7 +32,7 @@ const routes: Routes = [
   {path: 'usuarios/form', component: UsuariosFormComponent},
   {path: 'usuarios/form/:id', component: UsuariosFormComponent},
   {path: 'usuarios/perfil', component: UsuarioPerfilComponent},
-  {path: 'inicio', component:InicioComponent}
+  {path: 'inicio', component:InicioComponent},
 ];
 
 

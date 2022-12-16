@@ -57,4 +57,51 @@
         </div>
 
     </div>
+
+    <div class="row gy-12">
+        <figure class="text-center">
+            <h1 class="display-6"></h1>
+        </figure>
+    </div>
+    <div class="row gy-5">
+        <figure class="text-center">
+            <h1 class="display-6">Productos Rentados</h1>
+        </figure>
+    </div>
+
+    <div class="container py-5">
+
+    <div class="row">
+      <div
+        class="col-md-6 col-lg-4 mb-4 mb-md-0"
+        *ngFor="let producto of productos">
+        <div class="card">
+          <div class="d-flex justify-content-between p-3">
+            <p class="lead mb-0">{{ producto.nombre }}</p>            
+              <div class="botonFantasmaAzul d-flex align-items-center justify-content-center shadow-1-strong">
+                <p class="text-white mb-0 small" [routerLink]="['/productos/ver', producto.id]">Ver</p>
+              </div>
+          </div>
+          <img
+            src="https://unamenlinea.unam.mx/recursos/img/81761/repositorio-atenea-de-la-facultad-de-ciencias.jpg"
+            class="card-img-top"
+            alt="Laptop"
+          />
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <p class="small"><a href="#!" class="text-muted">Codigo:</a></p>
+              <p class="small text-danger">{{ producto.codigo }}</p>
+            </div>
+
+            <div class="d-flex justify-content-between mb-3">
+              <h5 class="mb-0">Precio:</h5>
+              <h5 class="text-dark mb-0">{{ producto.precio }} Puma puntos</h5>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

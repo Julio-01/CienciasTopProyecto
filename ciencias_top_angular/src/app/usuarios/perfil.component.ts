@@ -3,6 +3,8 @@ import { Usuario } from './usuario';
 import { UsuarioService } from './usuario.service';
 import { AuthService } from './auth.service';
 import { Router, ActivatedRoute } from '@angular/router';
+import { Producto } from '../productos/producto';
+import { ProductoService } from '../productos/producto.service';
 import swal from 'sweetalert2';
 import { Observable } from 'rxjs';
 
@@ -15,11 +17,15 @@ export class UsuarioPerfilComponent implements OnInit {
 
   titulo: string = "Ver Perfil"
   usuario: Usuario = new Usuario()
+  productos: Producto[];
 
-  constructor(private usuarioService: UsuarioService, private authService: AuthService, private router: Router, private activateRoute: ActivatedRoute) { }
+  constructor(private productoService: ProductoService, private usuarioService: UsuarioService, private authService: AuthService, private router: Router, private activateRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.cargarUsuario();
+    this.productoService.getProductos().subscribe(
+      productos => this.productos = productos
+    );
   }
 
   cargarUsuario(): void{
@@ -31,5 +37,10 @@ export class UsuarioPerfilComponent implements OnInit {
         this.usuario.roles = [...roles];
       }
     );
+    this.productoService.getProductos().subscribe(
+      productos => this.productos = productos
+    );
   }
+
+
 }
